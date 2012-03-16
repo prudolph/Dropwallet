@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5DE5DF9151376690022BA49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5DE5DF8151376690022BA49 /* UIKit.framework */; };
+		A5DE5DFB151376690022BA49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5DE5DFA151376690022BA49 /* Foundation.framework */; };
+		A5DE5DFD151376690022BA49 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5DE5DFC151376690022BA49 /* CoreGraphics.framework */; };
+		A5DE5E03151376690022BA49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5DE5E01151376690022BA49 /* InfoPlist.strings */; };
+		A5DE5E05151376690022BA49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DE5E04151376690022BA49 /* main.m */; };
+		A5DE5E09151376690022BA49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DE5E08151376690022BA49 /* AppDelegate.m */; };
+		A5DE5E0C151376690022BA49 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DE5E0B151376690022BA49 /* ViewController.m */; };
+		A5DE5E0F151376690022BA49 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5DE5E0D151376690022BA49 /* ViewController.xib */; };
+		A5DE5E17151376690022BA49 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5DE5E16151376690022BA49 /* SenTestingKit.framework */; };
+		A5DE5E18151376690022BA49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5DE5DF8151376690022BA49 /* UIKit.framework */; };
+		A5DE5E19151376690022BA49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5DE5DFA151376690022BA49 /* Foundation.framework */; };
+		A5DE5E21151376690022BA49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5DE5E1F151376690022BA49 /* InfoPlist.strings */; };
+		A5DE5E24151376690022BA49 /* DropWalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DE5E23151376690022BA49 /* DropWalletTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5DE5E1A151376690022BA49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5DE5DEB151376690022BA49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5DE5DF3151376690022BA49;
+			remoteInfo = DropWallet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A5DE5DF4151376690022BA49 /* DropWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5DE5DF8151376690022BA49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A5DE5DFA151376690022BA49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A5DE5DFC151376690022BA49 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A5DE5E00151376690022BA49 /* DropWallet-Info.plist */ = {isa = PBXFileReference; path = "DropWallet-Info.plist"; sourceTree = "<group>"; };
+		A5DE5E02151376690022BA49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A5DE5E04151376690022BA49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5DE5E06151376690022BA49 /* DropWallet-Prefix.pch */ = {isa = PBXFileReference; path = "DropWallet-Prefix.pch"; sourceTree = "<group>"; };
+		A5DE5E07151376690022BA49 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		A5DE5E08151376690022BA49 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A5DE5E0A151376690022BA49 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		A5DE5E0B151376690022BA49 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A5DE5E0E151376690022BA49 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		A5DE5E15151376690022BA49 /* DropWalletTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropWalletTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5DE5E16151376690022BA49 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A5DE5E1E151376690022BA49 /* DropWalletTests-Info.plist */ = {isa = PBXFileReference; path = "DropWalletTests-Info.plist"; sourceTree = "<group>"; };
+		A5DE5E20151376690022BA49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A5DE5E22151376690022BA49 /* DropWalletTests.h */ = {isa = PBXFileReference; path = DropWalletTests.h; sourceTree = "<group>"; };
+		A5DE5E23151376690022BA49 /* DropWalletTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropWalletTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5DE5DF1151376690022BA49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5DE5DF9151376690022BA49 /* UIKit.framework in Frameworks */,
+				A5DE5DFB151376690022BA49 /* Foundation.framework in Frameworks */,
+				A5DE5DFD151376690022BA49 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5DE5E11151376690022BA49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5DE5E17151376690022BA49 /* SenTestingKit.framework in Frameworks */,
+				A5DE5E18151376690022BA49 /* UIKit.framework in Frameworks */,
+				A5DE5E19151376690022BA49 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5DE5DE9151376690022BA49 = {
+			isa = PBXGroup;
+			children = (
+				A5DE5DFE151376690022BA49 /* DropWallet */,
+				A5DE5E1C151376690022BA49 /* DropWalletTests */,
+				A5DE5DF7151376690022BA49 /* Frameworks */,
+				A5DE5DF5151376690022BA49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5DE5DF5151376690022BA49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5DE5DF4151376690022BA49 /* DropWallet.app */,
+				A5DE5E15151376690022BA49 /* DropWalletTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5DE5DF7151376690022BA49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5DE5DF8151376690022BA49 /* UIKit.framework */,
+				A5DE5DFA151376690022BA49 /* Foundation.framework */,
+				A5DE5DFC151376690022BA49 /* CoreGraphics.framework */,
+				A5DE5E16151376690022BA49 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5DE5DFE151376690022BA49 /* DropWallet */ = {
+			isa = PBXGroup;
+			children = (
+				A5DE5E07151376690022BA49 /* AppDelegate.h */,
+				A5DE5E08151376690022BA49 /* AppDelegate.m */,
+				A5DE5E0A151376690022BA49 /* ViewController.h */,
+				A5DE5E0B151376690022BA49 /* ViewController.m */,
+				A5DE5E0D151376690022BA49 /* ViewController.xib */,
+				A5DE5DFF151376690022BA49 /* Supporting Files */,
+			);
+			path = DropWallet;
+			sourceTree = "<group>";
+		};
+		A5DE5DFF151376690022BA49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5DE5E00151376690022BA49 /* DropWallet-Info.plist */,
+				A5DE5E01151376690022BA49 /* InfoPlist.strings */,
+				A5DE5E04151376690022BA49 /* main.m */,
+				A5DE5E06151376690022BA49 /* DropWallet-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5DE5E1C151376690022BA49 /* DropWalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5DE5E22151376690022BA49 /* DropWalletTests.h */,
+				A5DE5E23151376690022BA49 /* DropWalletTests.m */,
+				A5DE5E1D151376690022BA49 /* Supporting Files */,
+			);
+			path = DropWalletTests;
+			sourceTree = "<group>";
+		};
+		A5DE5E1D151376690022BA49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5DE5E1E151376690022BA49 /* DropWalletTests-Info.plist */,
+				A5DE5E1F151376690022BA49 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5DE5DF3151376690022BA49 /* DropWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5DE5E27151376690022BA49 /* Build configuration list for PBXNativeTarget "DropWallet" */;
+			buildPhases = (
+				A5DE5DF0151376690022BA49 /* Sources */,
+				A5DE5DF1151376690022BA49 /* Frameworks */,
+				A5DE5DF2151376690022BA49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DropWallet;
+			productName = DropWallet;
+			productReference = A5DE5DF4151376690022BA49 /* DropWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5DE5E14151376690022BA49 /* DropWalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5DE5E2A151376690022BA49 /* Build configuration list for PBXNativeTarget "DropWalletTests" */;
+			buildPhases = (
+				A5DE5E10151376690022BA49 /* Sources */,
+				A5DE5E11151376690022BA49 /* Frameworks */,
+				A5DE5E12151376690022BA49 /* Resources */,
+				A5DE5E13151376690022BA49 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5DE5E1B151376690022BA49 /* PBXTargetDependency */,
+			);
+			name = DropWalletTests;
+			productName = DropWalletTests;
+			productReference = A5DE5E15151376690022BA49 /* DropWalletTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5DE5DEB151376690022BA49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = A5DE5DEE151376690022BA49 /* Build configuration list for PBXProject "DropWallet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A5DE5DE9151376690022BA49;
+			productRefGroup = A5DE5DF5151376690022BA49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5DE5DF3151376690022BA49 /* DropWallet */,
+				A5DE5E14151376690022BA49 /* DropWalletTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5DE5DF2151376690022BA49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5DE5E03151376690022BA49 /* InfoPlist.strings in Resources */,
+				A5DE5E0F151376690022BA49 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5DE5E12151376690022BA49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5DE5E21151376690022BA49 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5DE5E13151376690022BA49 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5DE5DF0151376690022BA49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5DE5E05151376690022BA49 /* main.m in Sources */,
+				A5DE5E09151376690022BA49 /* AppDelegate.m in Sources */,
+				A5DE5E0C151376690022BA49 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5DE5E10151376690022BA49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5DE5E24151376690022BA49 /* DropWalletTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5DE5E1B151376690022BA49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5DE5DF3151376690022BA49 /* DropWallet */;
+			targetProxy = A5DE5E1A151376690022BA49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5DE5E01151376690022BA49 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5DE5E02151376690022BA49 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A5DE5E0D151376690022BA49 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5DE5E0E151376690022BA49 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		A5DE5E1F151376690022BA49 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5DE5E20151376690022BA49 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5DE5E25151376690022BA49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A5DE5E26151376690022BA49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5DE5E28151376690022BA49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DropWallet/DropWallet-Prefix.pch";
+				INFOPLIST_FILE = "DropWallet/DropWallet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A5DE5E29151376690022BA49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DropWallet/DropWallet-Prefix.pch";
+				INFOPLIST_FILE = "DropWallet/DropWallet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A5DE5E2B151376690022BA49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DropWallet.app/DropWallet";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DropWallet/DropWallet-Prefix.pch";
+				INFOPLIST_FILE = "DropWalletTests/DropWalletTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A5DE5E2C151376690022BA49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DropWallet.app/DropWallet";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DropWallet/DropWallet-Prefix.pch";
+				INFOPLIST_FILE = "DropWalletTests/DropWalletTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5DE5DEE151376690022BA49 /* Build configuration list for PBXProject "DropWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5DE5E25151376690022BA49 /* Debug */,
+				A5DE5E26151376690022BA49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5DE5E27151376690022BA49 /* Build configuration list for PBXNativeTarget "DropWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5DE5E28151376690022BA49 /* Debug */,
+				A5DE5E29151376690022BA49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A5DE5E2A151376690022BA49 /* Build configuration list for PBXNativeTarget "DropWalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5DE5E2B151376690022BA49 /* Debug */,
+				A5DE5E2C151376690022BA49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5DE5DEB151376690022BA49 /* Project object */;
+}
