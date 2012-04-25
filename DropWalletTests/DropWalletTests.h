@@ -7,7 +7,14 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
-@interface DropWalletTests : SenTestCase
+@interface DropWalletTests : SenTestCase{
 
+    @private
+    
+    
+    
+}
 @end

@@ -7,19 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A517BFF1152F33F000D51CE9 /* States.plist in Resources */ = {isa = PBXBuildFile; fileRef = A517BFF0152F33F000D51CE9 /* States.plist */; };
+		A546D86E15260CE200BB8C37 /* EditCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A546D86D15260CE200BB8C37 /* EditCell.xib */; };
+		A55EEFEC153DBE7300148541 /* signupButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A55EEFEB153DBE7300148541 /* signupButton.png */; };
+		A55EEFF0153DC0F600148541 /* SignUpModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A55EEFEE153DC0F600148541 /* SignUpModalViewController.m */; };
+		A55EEFF1153DC0F600148541 /* SignUpModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A55EEFEF153DC0F600148541 /* SignUpModalViewController.xib */; };
+		A564B2F2152A380F0034EB03 /* AddressSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A564B2F1152A380F0034EB03 /* AddressSwitchCell.xib */; };
+		A571FD4E151780B2009C8B64 /* RootActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A571FD4C151780B1009C8B64 /* RootActivityViewController.m */; };
+		A571FD4F151780B2009C8B64 /* RootActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A571FD4D151780B2009C8B64 /* RootActivityViewController.xib */; };
+		A571FD54151785C2009C8B64 /* RootAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A571FD52151785C1009C8B64 /* RootAccountViewController.m */; };
+		A571FD55151785C2009C8B64 /* RootAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A571FD53151785C1009C8B64 /* RootAccountViewController.xib */; };
+		A571FD691517A713009C8B64 /* AccountDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A571FD671517A713009C8B64 /* AccountDetailViewController.m */; };
+		A571FD6A1517A713009C8B64 /* AccountDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A571FD681517A713009C8B64 /* AccountDetailViewController.xib */; };
+		A571FD6F1517B101009C8B64 /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = A571FD6E1517B101009C8B64 /* Address.m */; };
+		A571FD741517C7FD009C8B64 /* CreditCard.m in Sources */ = {isa = PBXBuildFile; fileRef = A571FD731517C7FC009C8B64 /* CreditCard.m */; };
+		A571FD761517D02B009C8B64 /* CreditCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A571FD751517D02B009C8B64 /* CreditCardCell.xib */; };
+		A571FD781518BCF6009C8B64 /* AddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A571FD771518BCF5009C8B64 /* AddressCell.xib */; };
+		A5789F511518CCCF00A75436 /* EditItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5789F4F1518CCCF00A75436 /* EditItemViewController.m */; };
+		A5789F521518CCCF00A75436 /* EditItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5789F501518CCCF00A75436 /* EditItemViewController.xib */; };
+		A57BB3B0152CDB6D006E1141 /* MClogo.gif in Resources */ = {isa = PBXBuildFile; fileRef = A57BB3AF152CDB6D006E1141 /* MClogo.gif */; };
+		A57BB3B6152CDC13006E1141 /* discover_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A57BB3B5152CDC13006E1141 /* discover_logo.jpg */; };
+		A58FFC3D1513B76100178AA0 /* Sharkweekdvd.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A58FFC3C1513B76100178AA0 /* Sharkweekdvd.jpeg */; };
+		A58FFC411513B7EB00178AA0 /* jergens.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A58FFC3E1513B7EB00178AA0 /* jergens.jpeg */; };
+		A58FFC421513B7EB00178AA0 /* ring.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A58FFC3F1513B7EB00178AA0 /* ring.jpeg */; };
+		A58FFC431513B7EB00178AA0 /* sharkweek2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A58FFC401513B7EB00178AA0 /* sharkweek2.jpeg */; };
+		A58FFC491513BB2A00178AA0 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A58FFC481513BB2A00178AA0 /* ItemCell.xib */; };
+		A5967EC01524AE0E001915F3 /* graylinen.png in Resources */ = {isa = PBXBuildFile; fileRef = A5967EBF1524AE0E001915F3 /* graylinen.png */; };
+		A59846E81520EEFE00AE08E3 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59846E61520EEFE00AE08E3 /* LogInViewController.m */; };
+		A59846E91520EEFE00AE08E3 /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A59846E71520EEFE00AE08E3 /* LogInViewController.xib */; };
+		A5A98D6E152DD14A00ECDD4B /* visaLogo.gif in Resources */ = {isa = PBXBuildFile; fileRef = A5A98D6D152DD14A00ECDD4B /* visaLogo.gif */; };
+		A5AA3E1515137ADC004345BA /* OrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5AA3E1415137ADC004345BA /* OrderCell.xib */; };
+		A5AA3E1D15137E15004345BA /* OrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AA3E1B15137E15004345BA /* OrderDetailViewController.m */; };
+		A5AA3E1E15137E15004345BA /* OrderDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5AA3E1C15137E15004345BA /* OrderDetailViewController.xib */; };
+		A5BB967A152215D8006693B9 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB9678152215D8006693B9 /* KeychainItemWrapper.m */; };
+		A5BB968015221889006693B9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BB967F15221889006693B9 /* Security.framework */; };
+		A5C76F181546F6A100E860DF /* DropwalletSimpleObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C76F161546F6A100E860DF /* DropwalletSimpleObjectTests.m */; };
+		A5C76F1E15471A2A00E860DF /* LoginControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C76F1D15471A2A00E860DF /* LoginControllerTests.m */; };
+		A5C76F2815472C1400E860DF /* Strings.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5C76F2715472C1400E860DF /* Strings.plist */; };
 		A5DE5DF9151376690022BA49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5DE5DF8151376690022BA49 /* UIKit.framework */; };
 		A5DE5DFB151376690022BA49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5DE5DFA151376690022BA49 /* Foundation.framework */; };
 		A5DE5DFD151376690022BA49 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5DE5DFC151376690022BA49 /* CoreGraphics.framework */; };
 		A5DE5E03151376690022BA49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5DE5E01151376690022BA49 /* InfoPlist.strings */; };
 		A5DE5E05151376690022BA49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DE5E04151376690022BA49 /* main.m */; };
 		A5DE5E09151376690022BA49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DE5E08151376690022BA49 /* AppDelegate.m */; };
-		A5DE5E0C151376690022BA49 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DE5E0B151376690022BA49 /* ViewController.m */; };
-		A5DE5E0F151376690022BA49 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5DE5E0D151376690022BA49 /* ViewController.xib */; };
 		A5DE5E17151376690022BA49 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5DE5E16151376690022BA49 /* SenTestingKit.framework */; };
 		A5DE5E18151376690022BA49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5DE5DF8151376690022BA49 /* UIKit.framework */; };
 		A5DE5E19151376690022BA49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5DE5DFA151376690022BA49 /* Foundation.framework */; };
 		A5DE5E21151376690022BA49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5DE5E1F151376690022BA49 /* InfoPlist.strings */; };
 		A5DE5E24151376690022BA49 /* DropWalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DE5E23151376690022BA49 /* DropWalletTests.m */; };
+		A5DE5E351513770A0022BA49 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DE5E321513770A0022BA49 /* Item.m */; };
+		A5DE5E361513770A0022BA49 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DE5E341513770A0022BA49 /* Order.m */; };
+		A5F10D7D153C6FFF0077BF53 /* ScrollingImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F10D7C153C6FFF0077BF53 /* ScrollingImage.m */; };
+		A5F10D7F153CB7440077BF53 /* DropWalletLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A5F10D7E153CB7440077BF53 /* DropWalletLogo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,25 +72,78 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A517BFF0152F33F000D51CE9 /* States.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = States.plist; sourceTree = "<group>"; };
+		A546D86D15260CE200BB8C37 /* EditCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditCell.xib; sourceTree = "<group>"; };
+		A55EEFEB153DBE7300148541 /* signupButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signupButton.png; sourceTree = "<group>"; };
+		A55EEFED153DC0F600148541 /* SignUpModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpModalViewController.h; sourceTree = "<group>"; };
+		A55EEFEE153DC0F600148541 /* SignUpModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpModalViewController.m; sourceTree = "<group>"; };
+		A55EEFEF153DC0F600148541 /* SignUpModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpModalViewController.xib; sourceTree = "<group>"; };
+		A564B2F1152A380F0034EB03 /* AddressSwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressSwitchCell.xib; sourceTree = "<group>"; };
+		A571FD4B151780B1009C8B64 /* RootActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootActivityViewController.h; sourceTree = "<group>"; };
+		A571FD4C151780B1009C8B64 /* RootActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootActivityViewController.m; sourceTree = "<group>"; };
+		A571FD4D151780B2009C8B64 /* RootActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootActivityViewController.xib; sourceTree = "<group>"; };
+		A571FD51151785C1009C8B64 /* RootAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootAccountViewController.h; sourceTree = "<group>"; };
+		A571FD52151785C1009C8B64 /* RootAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootAccountViewController.m; sourceTree = "<group>"; };
+		A571FD53151785C1009C8B64 /* RootAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootAccountViewController.xib; sourceTree = "<group>"; };
+		A571FD661517A713009C8B64 /* AccountDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountDetailViewController.h; sourceTree = "<group>"; };
+		A571FD671517A713009C8B64 /* AccountDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountDetailViewController.m; sourceTree = "<group>"; };
+		A571FD681517A713009C8B64 /* AccountDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountDetailViewController.xib; sourceTree = "<group>"; };
+		A571FD6D1517B101009C8B64 /* Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
+		A571FD6E1517B101009C8B64 /* Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
+		A571FD721517C7FC009C8B64 /* CreditCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCard.h; sourceTree = "<group>"; };
+		A571FD731517C7FC009C8B64 /* CreditCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCard.m; sourceTree = "<group>"; };
+		A571FD751517D02B009C8B64 /* CreditCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditCardCell.xib; sourceTree = "<group>"; };
+		A571FD771518BCF5009C8B64 /* AddressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressCell.xib; sourceTree = "<group>"; };
+		A5789F4E1518CCCF00A75436 /* EditItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditItemViewController.h; sourceTree = "<group>"; };
+		A5789F4F1518CCCF00A75436 /* EditItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditItemViewController.m; sourceTree = "<group>"; };
+		A5789F501518CCCF00A75436 /* EditItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditItemViewController.xib; sourceTree = "<group>"; };
+		A57BB3AF152CDB6D006E1141 /* MClogo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MClogo.gif; sourceTree = "<group>"; };
+		A57BB3B5152CDC13006E1141 /* discover_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = discover_logo.jpg; sourceTree = "<group>"; };
+		A58FFC3C1513B76100178AA0 /* Sharkweekdvd.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sharkweekdvd.jpeg; sourceTree = "<group>"; };
+		A58FFC3E1513B7EB00178AA0 /* jergens.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jergens.jpeg; sourceTree = "<group>"; };
+		A58FFC3F1513B7EB00178AA0 /* ring.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ring.jpeg; sourceTree = "<group>"; };
+		A58FFC401513B7EB00178AA0 /* sharkweek2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sharkweek2.jpeg; sourceTree = "<group>"; };
+		A58FFC481513BB2A00178AA0 /* ItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
+		A5967EBF1524AE0E001915F3 /* graylinen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graylinen.png; sourceTree = "<group>"; };
+		A59846E51520EEFE00AE08E3 /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		A59846E61520EEFE00AE08E3 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		A59846E71520EEFE00AE08E3 /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
+		A5A98D6D152DD14A00ECDD4B /* visaLogo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = visaLogo.gif; sourceTree = "<group>"; };
+		A5AA3E1415137ADC004345BA /* OrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderCell.xib; sourceTree = "<group>"; };
+		A5AA3E1A15137E15004345BA /* OrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailViewController.h; sourceTree = "<group>"; };
+		A5AA3E1B15137E15004345BA /* OrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailViewController.m; sourceTree = "<group>"; };
+		A5AA3E1C15137E15004345BA /* OrderDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderDetailViewController.xib; sourceTree = "<group>"; };
+		A5BB9678152215D8006693B9 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		A5BB9679152215D8006693B9 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		A5BB967F15221889006693B9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A5C76F151546F6A100E860DF /* DropwalletSimpleObjectTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropwalletSimpleObjectTests.h; sourceTree = "<group>"; };
+		A5C76F161546F6A100E860DF /* DropwalletSimpleObjectTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropwalletSimpleObjectTests.m; sourceTree = "<group>"; };
+		A5C76F1C15471A2A00E860DF /* LoginControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginControllerTests.h; sourceTree = "<group>"; };
+		A5C76F1D15471A2A00E860DF /* LoginControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginControllerTests.m; sourceTree = "<group>"; };
+		A5C76F2715472C1400E860DF /* Strings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Strings.plist; sourceTree = "<group>"; };
 		A5DE5DF4151376690022BA49 /* DropWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5DE5DF8151376690022BA49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A5DE5DFA151376690022BA49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A5DE5DFC151376690022BA49 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A5DE5E00151376690022BA49 /* DropWallet-Info.plist */ = {isa = PBXFileReference; path = "DropWallet-Info.plist"; sourceTree = "<group>"; };
+		A5DE5E00151376690022BA49 /* DropWallet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DropWallet-Info.plist"; sourceTree = "<group>"; };
 		A5DE5E02151376690022BA49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A5DE5E04151376690022BA49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A5DE5E06151376690022BA49 /* DropWallet-Prefix.pch */ = {isa = PBXFileReference; path = "DropWallet-Prefix.pch"; sourceTree = "<group>"; };
-		A5DE5E07151376690022BA49 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		A5DE5E06151376690022BA49 /* DropWallet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DropWallet-Prefix.pch"; sourceTree = "<group>"; };
+		A5DE5E07151376690022BA49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A5DE5E08151376690022BA49 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A5DE5E0A151376690022BA49 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		A5DE5E0B151376690022BA49 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A5DE5E0E151376690022BA49 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		A5DE5E15151376690022BA49 /* DropWalletTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropWalletTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5DE5E16151376690022BA49 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		A5DE5E1E151376690022BA49 /* DropWalletTests-Info.plist */ = {isa = PBXFileReference; path = "DropWalletTests-Info.plist"; sourceTree = "<group>"; };
+		A5DE5E1E151376690022BA49 /* DropWalletTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DropWalletTests-Info.plist"; sourceTree = "<group>"; };
 		A5DE5E20151376690022BA49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A5DE5E22151376690022BA49 /* DropWalletTests.h */ = {isa = PBXFileReference; path = DropWalletTests.h; sourceTree = "<group>"; };
+		A5DE5E22151376690022BA49 /* DropWalletTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropWalletTests.h; sourceTree = "<group>"; };
 		A5DE5E23151376690022BA49 /* DropWalletTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropWalletTests.m; sourceTree = "<group>"; };
+		A5DE5E311513770A0022BA49 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		A5DE5E321513770A0022BA49 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		A5DE5E331513770A0022BA49 /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
+		A5DE5E341513770A0022BA49 /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
+		A5F10D7B153C6FFF0077BF53 /* ScrollingImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollingImage.h; sourceTree = "<group>"; };
+		A5F10D7C153C6FFF0077BF53 /* ScrollingImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollingImage.m; sourceTree = "<group>"; };
+		A5F10D7E153CB7440077BF53 /* DropWalletLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DropWalletLogo.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5BB968015221889006693B9 /* Security.framework in Frameworks */,
 				A5DE5DF9151376690022BA49 /* UIKit.framework in Frameworks */,
 				A5DE5DFB151376690022BA49 /* Foundation.framework in Frameworks */,
 				A5DE5DFD151376690022BA49 /* CoreGraphics.framework in Frameworks */,
@@ -78,6 +171,145 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A517BFEF152F33CD00D51CE9 /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				A517BFF0152F33F000D51CE9 /* States.plist */,
+				A5C76F2715472C1400E860DF /* Strings.plist */,
+			);
+			name = Plists;
+			sourceTree = "<group>";
+		};
+		A55EEFD6153DA81900148541 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				A55EEFEB153DBE7300148541 /* signupButton.png */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
+		A571FD641517A6D4009C8B64 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				A571FD4B151780B1009C8B64 /* RootActivityViewController.h */,
+				A571FD4C151780B1009C8B64 /* RootActivityViewController.m */,
+				A5AA3E1A15137E15004345BA /* OrderDetailViewController.h */,
+				A5AA3E1B15137E15004345BA /* OrderDetailViewController.m */,
+				A59846E51520EEFE00AE08E3 /* LogInViewController.h */,
+				A59846E61520EEFE00AE08E3 /* LogInViewController.m */,
+				A55EEFED153DC0F600148541 /* SignUpModalViewController.h */,
+				A55EEFEE153DC0F600148541 /* SignUpModalViewController.m */,
+			);
+			name = Activity;
+			sourceTree = "<group>";
+		};
+		A571FD651517A6ED009C8B64 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				A571FD51151785C1009C8B64 /* RootAccountViewController.h */,
+				A571FD52151785C1009C8B64 /* RootAccountViewController.m */,
+				A571FD661517A713009C8B64 /* AccountDetailViewController.h */,
+				A571FD671517A713009C8B64 /* AccountDetailViewController.m */,
+				A5789F4E1518CCCF00A75436 /* EditItemViewController.h */,
+				A5789F4F1518CCCF00A75436 /* EditItemViewController.m */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
+		A571FD6B1517A71D009C8B64 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				A571FD4D151780B2009C8B64 /* RootActivityViewController.xib */,
+				A5AA3E1C15137E15004345BA /* OrderDetailViewController.xib */,
+				A5AA3E1415137ADC004345BA /* OrderCell.xib */,
+				A58FFC481513BB2A00178AA0 /* ItemCell.xib */,
+			);
+			name = Activity;
+			sourceTree = "<group>";
+		};
+		A571FD6C1517A73A009C8B64 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				A5789F531518CCE000A75436 /* Cells */,
+				A571FD681517A713009C8B64 /* AccountDetailViewController.xib */,
+				A571FD53151785C1009C8B64 /* RootAccountViewController.xib */,
+				A5789F501518CCCF00A75436 /* EditItemViewController.xib */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
+		A5789F531518CCE000A75436 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A571FD751517D02B009C8B64 /* CreditCardCell.xib */,
+				A571FD771518BCF5009C8B64 /* AddressCell.xib */,
+				A546D86D15260CE200BB8C37 /* EditCell.xib */,
+				A564B2F1152A380F0034EB03 /* AddressSwitchCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		A57BB3AD152CDAD0006E1141 /* CreditCard Images */ = {
+			isa = PBXGroup;
+			children = (
+				A57BB3B5152CDC13006E1141 /* discover_logo.jpg */,
+				A57BB3AF152CDB6D006E1141 /* MClogo.gif */,
+				A5A98D6D152DD14A00ECDD4B /* visaLogo.gif */,
+			);
+			name = "CreditCard Images";
+			sourceTree = "<group>";
+		};
+		A58FFC3A1513B75300178AA0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A57BB3AD152CDAD0006E1141 /* CreditCard Images */,
+				A59846EE1520EF8100AE08E3 /* Item Images */,
+				A59846ED1520EF7400AE08E3 /* AppImages */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		A59846ED1520EF7400AE08E3 /* AppImages */ = {
+			isa = PBXGroup;
+			children = (
+				A55EEFD6153DA81900148541 /* Buttons */,
+				A5967EBF1524AE0E001915F3 /* graylinen.png */,
+				A5F10D7E153CB7440077BF53 /* DropWalletLogo.jpg */,
+			);
+			name = AppImages;
+			sourceTree = "<group>";
+		};
+		A59846EE1520EF8100AE08E3 /* Item Images */ = {
+			isa = PBXGroup;
+			children = (
+				A58FFC3E1513B7EB00178AA0 /* jergens.jpeg */,
+				A58FFC3F1513B7EB00178AA0 /* ring.jpeg */,
+				A58FFC401513B7EB00178AA0 /* sharkweek2.jpeg */,
+				A58FFC3C1513B76100178AA0 /* Sharkweekdvd.jpeg */,
+			);
+			name = "Item Images";
+			sourceTree = "<group>";
+		};
+		A5AA3E1315137AC0004345BA /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				A59846E71520EEFE00AE08E3 /* LogInViewController.xib */,
+				A55EEFEF153DC0F600148541 /* SignUpModalViewController.xib */,
+				A571FD6B1517A71D009C8B64 /* Activity */,
+				A571FD6C1517A73A009C8B64 /* Account */,
+			);
+			name = XIB;
+			sourceTree = "<group>";
+		};
+		A5AA3E1615137B5F004345BA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A571FD641517A6D4009C8B64 /* Activity */,
+				A571FD651517A6ED009C8B64 /* Account */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		A5DE5DE9151376690022BA49 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +332,7 @@
 		A5DE5DF7151376690022BA49 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A5BB967F15221889006693B9 /* Security.framework */,
 				A5DE5DF8151376690022BA49 /* UIKit.framework */,
 				A5DE5DFA151376690022BA49 /* Foundation.framework */,
 				A5DE5DFC151376690022BA49 /* CoreGraphics.framework */,
@@ -111,11 +344,12 @@
 		A5DE5DFE151376690022BA49 /* DropWallet */ = {
 			isa = PBXGroup;
 			children = (
+				A58FFC3A1513B75300178AA0 /* Images */,
+				A5DE5E37151377120022BA49 /* ObjectClasses */,
 				A5DE5E07151376690022BA49 /* AppDelegate.h */,
 				A5DE5E08151376690022BA49 /* AppDelegate.m */,
-				A5DE5E0A151376690022BA49 /* ViewController.h */,
-				A5DE5E0B151376690022BA49 /* ViewController.m */,
-				A5DE5E0D151376690022BA49 /* ViewController.xib */,
+				A5AA3E1615137B5F004345BA /* ViewControllers */,
+				A5AA3E1315137AC0004345BA /* XIB */,
 				A5DE5DFF151376690022BA49 /* Supporting Files */,
 			);
 			path = DropWallet;
@@ -124,6 +358,7 @@
 		A5DE5DFF151376690022BA49 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A517BFEF152F33CD00D51CE9 /* Plists */,
 				A5DE5E00151376690022BA49 /* DropWallet-Info.plist */,
 				A5DE5E01151376690022BA49 /* InfoPlist.strings */,
 				A5DE5E04151376690022BA49 /* main.m */,
@@ -137,6 +372,10 @@
 			children = (
 				A5DE5E22151376690022BA49 /* DropWalletTests.h */,
 				A5DE5E23151376690022BA49 /* DropWalletTests.m */,
+				A5C76F151546F6A100E860DF /* DropwalletSimpleObjectTests.h */,
+				A5C76F161546F6A100E860DF /* DropwalletSimpleObjectTests.m */,
+				A5C76F1C15471A2A00E860DF /* LoginControllerTests.h */,
+				A5C76F1D15471A2A00E860DF /* LoginControllerTests.m */,
 				A5DE5E1D151376690022BA49 /* Supporting Files */,
 			);
 			path = DropWalletTests;
@@ -149,6 +388,25 @@
 				A5DE5E1F151376690022BA49 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5DE5E37151377120022BA49 /* ObjectClasses */ = {
+			isa = PBXGroup;
+			children = (
+				A5DE5E311513770A0022BA49 /* Item.h */,
+				A5DE5E321513770A0022BA49 /* Item.m */,
+				A5DE5E331513770A0022BA49 /* Order.h */,
+				A5DE5E341513770A0022BA49 /* Order.m */,
+				A571FD6D1517B101009C8B64 /* Address.h */,
+				A571FD6E1517B101009C8B64 /* Address.m */,
+				A571FD721517C7FC009C8B64 /* CreditCard.h */,
+				A571FD731517C7FC009C8B64 /* CreditCard.m */,
+				A5BB9678152215D8006693B9 /* KeychainItemWrapper.m */,
+				A5BB9679152215D8006693B9 /* KeychainItemWrapper.h */,
+				A5F10D7B153C6FFF0077BF53 /* ScrollingImage.h */,
+				A5F10D7C153C6FFF0077BF53 /* ScrollingImage.m */,
+			);
+			name = ObjectClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,7 +480,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5DE5E03151376690022BA49 /* InfoPlist.strings in Resources */,
-				A5DE5E0F151376690022BA49 /* ViewController.xib in Resources */,
+				A5AA3E1515137ADC004345BA /* OrderCell.xib in Resources */,
+				A5AA3E1E15137E15004345BA /* OrderDetailViewController.xib in Resources */,
+				A58FFC3D1513B76100178AA0 /* Sharkweekdvd.jpeg in Resources */,
+				A58FFC411513B7EB00178AA0 /* jergens.jpeg in Resources */,
+				A58FFC421513B7EB00178AA0 /* ring.jpeg in Resources */,
+				A58FFC431513B7EB00178AA0 /* sharkweek2.jpeg in Resources */,
+				A58FFC491513BB2A00178AA0 /* ItemCell.xib in Resources */,
+				A571FD4F151780B2009C8B64 /* RootActivityViewController.xib in Resources */,
+				A571FD55151785C2009C8B64 /* RootAccountViewController.xib in Resources */,
+				A571FD6A1517A713009C8B64 /* AccountDetailViewController.xib in Resources */,
+				A571FD761517D02B009C8B64 /* CreditCardCell.xib in Resources */,
+				A571FD781518BCF6009C8B64 /* AddressCell.xib in Resources */,
+				A5789F521518CCCF00A75436 /* EditItemViewController.xib in Resources */,
+				A59846E91520EEFE00AE08E3 /* LogInViewController.xib in Resources */,
+				A5967EC01524AE0E001915F3 /* graylinen.png in Resources */,
+				A546D86E15260CE200BB8C37 /* EditCell.xib in Resources */,
+				A564B2F2152A380F0034EB03 /* AddressSwitchCell.xib in Resources */,
+				A57BB3B0152CDB6D006E1141 /* MClogo.gif in Resources */,
+				A57BB3B6152CDC13006E1141 /* discover_logo.jpg in Resources */,
+				A5A98D6E152DD14A00ECDD4B /* visaLogo.gif in Resources */,
+				A517BFF1152F33F000D51CE9 /* States.plist in Resources */,
+				A5F10D7F153CB7440077BF53 /* DropWalletLogo.jpg in Resources */,
+				A55EEFEC153DBE7300148541 /* signupButton.png in Resources */,
+				A55EEFF1153DC0F600148541 /* SignUpModalViewController.xib in Resources */,
+				A5C76F2815472C1400E860DF /* Strings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +541,19 @@
 			files = (
 				A5DE5E05151376690022BA49 /* main.m in Sources */,
 				A5DE5E09151376690022BA49 /* AppDelegate.m in Sources */,
-				A5DE5E0C151376690022BA49 /* ViewController.m in Sources */,
+				A5DE5E351513770A0022BA49 /* Item.m in Sources */,
+				A5DE5E361513770A0022BA49 /* Order.m in Sources */,
+				A5AA3E1D15137E15004345BA /* OrderDetailViewController.m in Sources */,
+				A571FD4E151780B2009C8B64 /* RootActivityViewController.m in Sources */,
+				A571FD54151785C2009C8B64 /* RootAccountViewController.m in Sources */,
+				A571FD691517A713009C8B64 /* AccountDetailViewController.m in Sources */,
+				A571FD6F1517B101009C8B64 /* Address.m in Sources */,
+				A571FD741517C7FD009C8B64 /* CreditCard.m in Sources */,
+				A5789F511518CCCF00A75436 /* EditItemViewController.m in Sources */,
+				A59846E81520EEFE00AE08E3 /* LogInViewController.m in Sources */,
+				A5BB967A152215D8006693B9 /* KeychainItemWrapper.m in Sources */,
+				A5F10D7D153C6FFF0077BF53 /* ScrollingImage.m in Sources */,
+				A55EEFF0153DC0F600148541 /* SignUpModalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +562,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5DE5E24151376690022BA49 /* DropWalletTests.m in Sources */,
+				A5C76F181546F6A100E860DF /* DropwalletSimpleObjectTests.m in Sources */,
+				A5C76F1E15471A2A00E860DF /* LoginControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,14 +584,6 @@
 				A5DE5E02151376690022BA49 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		A5DE5E0D151376690022BA49 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A5DE5E0E151376690022BA49 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 		A5DE5E1F151376690022BA49 /* InfoPlist.strings */ = {
@@ -360,6 +648,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DropWallet/DropWallet-Prefix.pch";
 				INFOPLIST_FILE = "DropWallet/DropWallet-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -371,6 +660,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DropWallet/DropWallet-Prefix.pch";
 				INFOPLIST_FILE = "DropWallet/DropWallet-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -429,6 +719,7 @@
 				A5DE5E29151376690022BA49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5DE5E2A151376690022BA49 /* Build configuration list for PBXNativeTarget "DropWalletTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +728,7 @@
 				A5DE5E2C151376690022BA49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Alabama</key>
+	<string>AL,350-369</string>
+	<key>Alaska</key>
+	<string>AK,995-999</string>
+	<key>Arizona</key>
+	<string>AZ,850-865</string>
+	<key>Arkansas</key>
+	<string>AR,716-729</string>
+	<key>California</key>
+	<string>CA,900-966</string>
+	<key>Colorado</key>
+	<string>CO,800-816</string>
+	<key>Connecticut</key>
+	<string>CT,060-069</string>
+	<key>Delaware</key>
+	<string>DE,197-199</string>
+	<key>Florida</key>
+	<string>FL,320-349</string>
+	<key>District of Columbia</key>
+	<string>DC,200-205</string>
+	<key>Georgia</key>
+	<string>GA,300-319,398-399</string>
+	<key>Hawaii</key>
+	<string>HI,967-968</string>
+	<key>Idaho</key>
+	<string>ID,832-838</string>
+	<key>Illinois</key>
+	<string>IL,600-629</string>
+	<key>Indiana</key>
+	<string>IN,460-479</string>
+	<key>Iowa</key>
+	<string>IA,500-528</string>
+	<key>Kansas</key>
+	<string>KS,660-679</string>
+	<key>Kentucky</key>
+	<string>KY,400-427</string>
+	<key>Louisiana</key>
+	<string>LA,700-714</string>
+	<key>Maine</key>
+	<string>ME,039-049</string>
+	<key>Maryland</key>
+	<string>MD,206-219</string>
+	<key>Massachusetts</key>
+	<string>MA,010-027,055</string>
+	<key>Michigan</key>
+	<string>MI,480-499</string>
+	<key>Minnesota</key>
+	<string>MN,550-567</string>
+	<key>Mississippi</key>
+	<string>MS,386-397</string>
+	<key>Missouri</key>
+	<string>MO,630-658</string>
+	<key>Montana</key>
+	<string>MT,590-599</string>
+	<key>Nebraska</key>
+	<string>NE,680-693</string>
+	<key>Nevada</key>
+	<string>NV,889-898</string>
+	<key>New Hampshire</key>
+	<string>NH,030-039</string>
+	<key>New Jersey</key>
+	<string>NJ,070-089</string>
+	<key>New Mexico</key>
+	<string>NM,870-884</string>
+	<key>New York</key>
+	<string>NY,090-149,005,063</string>
+	<key>North Carolina</key>
+	<string>NC,269-289</string>
+	<key>North Dakota</key>
+	<string>ND,580-588</string>
+	<key>Ohio</key>
+	<string>OH,430-459</string>
+	<key>Oklahoma</key>
+	<string>OK,730-749</string>
+	<key>Oregon</key>
+	<string>OR,970-979</string>
+	<key>Pennsylvania</key>
+	<string>PA,150-196</string>
+	<key>Rhode Island</key>
+	<string>RI,028-029</string>
+	<key>Puerto Rico</key>
+	<string>PR,006-009</string>
+	<key>South Carolina</key>
+	<string>SC,290-299</string>
+	<key>South Dakota</key>
+	<string>SD,570-577</string>
+	<key>Tennessee</key>
+	<string>TN,370-385</string>
+	<key>Texas</key>
+	<string>TX,750-799,885</string>
+	<key>Utah</key>
+	<string>UT,840-847</string>
+	<key>Vermont</key>
+	<string>VT,050-059</string>
+	<key>Virginia</key>
+	<string>VA,220-246,201</string>
+	<key>Virgin Islands</key>
+	<string>VI,008-008</string>
+	<key>Washington</key>
+	<string>WA,980-994</string>
+	<key>West Virginia</key>
+	<string>WV,247-268</string>
+	<key>Wisconsin</key>
+	<string>WI,530-549</string>
+	<key>Wyoming</key>
+	<string>WY,820-831</string>
+</dict>
+</plist>
