@@ -287,9 +287,11 @@
 
 #pragma mark - Table view delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"ROW HAS BEEN CLICKED");
     NSUInteger row = [indexPath row];
     [[self.purchasesTableView cellForRowAtIndexPath:indexPath] setUserInteractionEnabled:NO];
 
+    // if the last button "get more orders button"is clicked
     if(row ==[appDel.orders count]){
         if(appDel.orderCurrentPage <appDel.orderPages){
             appDel.orderCurrentPage++;
@@ -299,7 +301,7 @@
 
         }
     else{
-   //Load OrderDetail View
+   // otherwise Load  the OrderDetail View
         [appDel getSpecificOrder:((Order*)[appDel.orders objectAtIndex:[indexPath row]])];
         orderDetailViewController = [[OrderDetailViewController alloc] init];
         orderDetailViewController.currentOrder = [[Order alloc]init];
@@ -309,7 +311,8 @@
          UIBarButtonItem *newBackButton = [[UIBarButtonItem alloc] initWithTitle: @"Back" style: UIBarButtonItemStylePlain target: self.navigationController action: @selector(popViewControllerAnimated:)];
         [[self navigationItem] setBackBarButtonItem: newBackButton];
         
-        if( orderDetailViewController.currentOrder.individuallyUpdated )
+        
+        if( orderDetailViewController.currentOrder.individuallyUpdated || [appDel SYSdemo])
         [self.navigationController pushViewController:self.orderDetailViewController animated:YES];
 
     }

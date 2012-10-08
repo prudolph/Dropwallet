@@ -218,7 +218,7 @@
         if([[((Item *)[self.currentOrder.items objectAtIndex:row-1]).shippingUrls allKeys]count]>0){
               [trackingButton setTitle:[NSString stringWithFormat:@"%@",[[((Item *)[self.currentOrder.items objectAtIndex:row-1]).shippingUrls allKeys]objectAtIndex:0]] forState:UIControlStateNormal];
             
-            
+            NSLog(@"TRACKING INFO %@",((Item *)[self.currentOrder.items objectAtIndex:row-1]).shippingUrls );
             
             NSString *trackingUrl = [NSString stringWithFormat:@"%@",[[((Item *)[self.currentOrder.items objectAtIndex:row-1]).shippingUrls allValues]objectAtIndex:0]];
             

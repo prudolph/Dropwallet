@@ -312,6 +312,15 @@ return YES;
         addressBook=[[NSMutableArray alloc]init];
     if(SYSdemo){
         NSLog(@"DEMO: LOADING AddressBook");
+        
+        NSString *sampleAddressData = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"addressTestData" ofType:@"txt"]
+                                                              encoding:NSUTF8StringEncoding
+                                                                 error:NULL];
+        
+        NSLog(@"Sample Data %@", (NSArray*)[((NSDictionary*)[jsonParser objectWithString:sampleAddressData]) objectForKey:@"items"]);
+        
+        [self recivedManyAddresses:(NSArray*)[((NSDictionary*)[jsonParser objectWithString:sampleAddressData]) objectForKey:@"items"]];
+
     }
     else{
     [self sendHttpRequestWithType:@"GET" 
@@ -324,9 +333,20 @@ return YES;
     if(!wallet)
         wallet=[[NSMutableArray alloc]init];
     
+  
     if(SYSdemo){
         NSLog(@"DEMO: LOADING Wallet");
+        
+        NSString *sampleWalletData = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"walletTestData" ofType:@"txt"]
+                                                                encoding:NSUTF8StringEncoding
+                                                                   error:NULL];
+        
+        NSLog(@"Sample WAllet Data %@",[((NSDictionary*)[jsonParser objectWithString:sampleWalletData]) objectForKey:@"items"]);
+        
+        [self recivedManyCreditCards:(NSArray*)[((NSDictionary*)[jsonParser objectWithString:sampleWalletData]) objectForKey:@"items"]];
+        
     }
+
     else{
     [self sendHttpRequestWithType:@"GET"
                           andBody:nil 
@@ -340,24 +360,17 @@ return YES;
     
     if(SYSdemo){
         NSLog(@"DEMO: LOADING ORDERS");
-        
-              NSString *sampleOrderData = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"orderTestData1" ofType:@"txt"]
-                                                              encoding:NSUTF8StringEncoding
-                                                                 error:NULL];
+        NSString *sampleOrderData = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"orderTestData" ofType:@"txt"]
+            encoding:NSUTF8StringEncoding
+            error:NULL];
         
         NSLog(@"Sample Data %@", sampleOrderData);
          
-               //////
-        /*
-            NSDictionary *demoOrdersDict=[NSDictionary dictionaryWithObjectsAndKeys:@"0000",@"userId",
-                                     @"SUCCESS",@"status",
-                                     @"Sample",@"firstName",
-                                     @"User",@"lastName",
-                                     nil];
+        [self recivedManyOrders:[jsonParser objectWithString:sampleOrderData]];
         
-        [self didReciveData:[[jsonWriter stringWithObject:demoOrdersDict]dataUsingEncoding:NSUTF8StringEncoding]];
-         */
-        //////
+ 
+        
+       
     }
     else{
        [self sendHttpRequestWithType:@"GET"
@@ -367,12 +380,18 @@ return YES;
 
    }
 -(void)getSpecificOrder:(Order *)orderToUpdate{
+  
+        
+        
+
+    
     //check if more data is needed for particular order
     if(!orderToUpdate.individuallyUpdated){
         [self sendHttpRequestWithType:@"GET" 
                               andBody:nil 
                                 toURL:[NSString stringWithFormat:@"users/%@/orders/%@",[accountInfo objectForKey:@"userId"],orderToUpdate.orderNumber]];   
     }
+    
 }
 -(void)cancelOrder:(NSString*) orderNumber{
     
@@ -704,6 +723,7 @@ if(![self testConnection]){
     
 }
 -(void)recivedManyAddresses:(NSArray*)items{
+    NSLog(@"ADDRESSES : %@ ",items);
     NSMutableArray *tempArray=[[NSMutableArray alloc]init];
     
     for(NSDictionary* a in items){
