@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Addresses</key>
+	<dict>
+		<key>New item</key>
+		<dict>
+			<key>toName</key>
+			<string>Paul Rudolph</string>
+			<key>address1</key>
+			<string>36 Iowa Ct.</string>
+			<key>city</key>
+			<string>Little Egg Harbor</string>
+			<key>state</key>
+			<string>NJ</string>
+			<key>zip</key>
+			<string>08087</string>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>New item - 2</key>
+		<dict>
+			<key>toName</key>
+			<string>Paul Rudolph</string>
+			<key>address1</key>
+			<string>110 N mole St</string>
+			<key>city</key>
+			<string>Philadelphia</string>
+			<key>state</key>
+			<string>PA</string>
+			<key>zip</key>
+			<string>19121</string>
+			<key>primary</key>
+			<false/>
+		</dict>
+		<key>New item - 3</key>
+		<dict>
+			<key>toName</key>
+			<string>Paul Rudolph</string>
+			<key>address1</key>
+			<string>210 E Lake Dr</string>
+			<key>city</key>
+			<string>Cherry Hill</string>
+			<key>state</key>
+			<string>NJ</string>
+			<key>zip</key>
+			<string>08002</string>
+			<key>primary</key>
+			<false/>
+		</dict>
+	</dict>
+</dict>
+</plist>

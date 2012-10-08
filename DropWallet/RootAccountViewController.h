@@ -7,15 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
+#import "LogInViewController.h"
 
 @class AccountDetailViewController;
-@interface RootAccountViewController : UITableViewController{
+@interface RootAccountViewController : UIViewController{
 
     NSArray *accountSettings;
     IBOutlet AccountDetailViewController *accountDetailViewController;
- 
+    AppDelegate *appDel;
+    IBOutlet UITableView *accountRootTableView;
 }
 
 @property (nonatomic,retain) NSArray *accountSettings;
 @property (nonatomic,retain) IBOutlet AccountDetailViewController * accountDetailViewController;
+@property (nonatomic,retain) AppDelegate *appDel;
+@property (nonatomic,retain) IBOutlet UITableView *accountRootTableView;
+
+
 @end

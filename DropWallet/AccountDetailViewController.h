@@ -7,13 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ScrollingImage.h"
+#import "Validator.h"
 @class AppDelegate;
 @class EditItemViewController;
 @interface AccountDetailViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate,UITextFieldDelegate>{
 
     AppDelegate *appDel;
     
-    UIAlertView *editPassAlert;
+    UIAlertView *editPassAlert,*confirmDelete;
     NSMutableDictionary*cclogos;
     //TableView
     IBOutlet UITableView *accountDetailTableView;
@@ -31,7 +33,7 @@
                              *addressTableViewCell,
                              *editTableViewCell;
 
-    
+ 
 
     IBOutlet UITextField *currentPass,*nPass,*nPass2,*userFName,*userLName,*userEmail;
 
@@ -41,13 +43,15 @@
     IBOutlet EditItemViewController *editItemViewController;
     
 }
+
+
 @property (nonatomic,retain)NSArray *currentArray,
                                     *passwordLabelArray,
                                     *passwordTextFieldArray,
                                     *personalLabelArray,
                                     *personalTextfieldArray;
 
-@property (nonatomic,retain) UIAlertView *editPassAlert;
+@property (nonatomic,retain) UIAlertView *editPassAlert,*confirmDelete;
 
 @property (nonatomic,retain) NSMutableDictionary *cclogos;
 @property (nonatomic,retain) IBOutlet UITableViewCell *ccTableViewCell,
@@ -56,7 +60,7 @@
 
 @property (nonatomic,retain) IBOutlet UITableView *accountDetailTableView;
 
-
+@property(nonatomic,retain)    NSString* currentTextString;
 @property (nonatomic,retain)IBOutlet UITextField *currentPass,
                                                  *nPass,
                                                  *nPass2,
@@ -64,7 +68,7 @@
                                                  *userLName,
                                                  *userEmail;
 @property (nonatomic,retain) AppDelegate *appDel;
-@property (nonatomic) int accountOption;
+@property (nonatomic) int accountOption,rowforDeletion;
 
 
 @property (nonatomic,retain) IBOutlet EditItemViewController *editItemViewController;

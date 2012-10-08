@@ -10,6 +10,8 @@
 #import "Address.h"
 #import "CreditCard.h"
 #import "AccountDetailViewController.h"
+#import "Validator.h"
+
 
 ///Protocol
 @protocol EditAddressViewControllerDelegate <NSObject>
@@ -32,6 +34,7 @@
     int viewPos;
     Address    *currentAddress;
     CreditCard *currentCreditCard;
+    Validator *validator;
     NSTimer *expDateTimer;
     IBOutlet UITableView *editItemTableView;
     
@@ -48,19 +51,20 @@
     //address textFields
     IBOutlet UITextField *toNameTextField,
                          *address1TextField,
+                         *address2TextField,
                          *cityTextField,
                          *stateTextField,
-                         *zipTextField;
-    IBOutlet UISwitch *primaryAddressSwitch;
+                         *zipTextField,
+                         *addressIDTextField;   
+    IBOutlet UIButton    *primaryCCButton,*primaryAddressButton,*addressSwitchButton;// switch for creating/choosing address
     
     //arrays for uipicker ep date view, Creditcard info and address info
     NSArray *pickerMonths,*pickerYears,
             *CCLabels,*CCTextFields,*ccTypes,
-            *addressLabels,*addressTextFields,*states;
-    
+            *addressLabels,*addressTextFields;
+    NSMutableArray *states;
    
-    IBOutlet UISegmentedControl *addressSwitch;// switch for creating/choosing address
-    
+       
   
     
     //Date picker
@@ -78,6 +82,7 @@
 @property int viewPos;
 @property(nonatomic,retain)         Address *currentAddress;
 @property(nonatomic,retain)         CreditCard *currentCreditCard;
+@property(nonatomic,retain)         Validator *validator;
 @property (nonatomic,retain)IBOutlet UITableView *editItemTableView;
 @property(nonatomic,retain)NSTimer *expDateTimer;
 @property (nonatomic,retain)IBOutlet UITableViewCell *addressSwitchCell,
@@ -95,19 +100,22 @@
 //Address textFields
 @property (nonatomic,retain)IBOutlet UITextField *toNameTextField,
                                                 *address1TextField,
+                                                *address2TextField,
                                                 *cityTextField,
                                                 *stateTextField,
-                                                *zipTextField;
-@property (nonatomic,retain)IBOutlet UISwitch *primaryAddressSwitch;
+                                                *zipTextField,
+                                                *addressIDTextField;  
+
+@property (nonatomic,retain)IBOutlet UIButton  *primaryCCButton,*primaryAddressButton,*addressSwitchButton;
 @property(nonatomic,retain) NSArray *pickerMonths,*pickerYears,*ccTypes,
                                     *CCLabels,*CCTextFields,
-                                    *addressLabels,*addressTextFields,*states;
+                                    *addressLabels,*addressTextFields;
 
-
+@property(nonatomic,retain)NSMutableArray *states;
 @property(nonatomic,retain) IBOutlet UIPickerView *expDatePicker,*cardTypePicker,*statesPicker;
 @property (nonatomic,retain)NSString *curExpMon,*curExpYear;
 
-
+@property(nonatomic,retain)NSString *currentTextfieldString;
 @property (nonatomic,retain)IBOutlet UITextField *exp;
 
 
@@ -115,19 +123,13 @@
 //BUTTON FUNCTIONS
 //SaveFunctions
 -(IBAction)saveCreditcard:(id)sender;
+-(void)creditCardResponse;
 -(IBAction)saveAddress:(id)sender;
--(IBAction)saveModifiedAddressButtonPressed:(id)sender;
--(IBAction)saveNewAddressButtonPressed:(id)sender;
-//address
-
+-(void)addressResponse;
 - (IBAction)textFieldDoneEditing:(id)sender;
--(IBAction)addressSwitched:(UISegmentedControl*)sender;
--(NSString*)validateInput:(NSString*)input
-                  andType:(int)type ;
--(BOOL)zipCode:(int)code isBetween:(int)low and:(int)high;
--(BOOL)creditcardIsValidWith:(NSString*) ccType
-                 andCcNumber:(NSString*)ccNumber
-                     andCCV2:(NSString*)ccV2;
+-(IBAction)addressSwitched:(UITableViewRowAnimation)animation;
 
 -(void)backButtonPressed;
+-(void)primaryButtonPressed:(UIButton*)sender;
+-(void)textFieldDidChange:(id)textField;
 @end

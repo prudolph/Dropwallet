@@ -27,7 +27,8 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
 //Alert
 @synthesize missingInfoAlert;
 //Button
-@synthesize submitButton,SignUpButton;
+@synthesize submitButton,SignUpButton,savePasswordButton;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -50,26 +51,31 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.appDel = (AppDelegate*)[[UIApplication sharedApplication]delegate];
+    appDel.loadIndicator.frame=CGRectMake(125.0, 225, 45, 45);
+    [self.view addSubview: appDel.loadIndicator];
+    [appDel.loadIndicator stopAnimating];
     
-    self.appDel = [[UIApplication sharedApplication]delegate];
-
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     
     // Get username from keychain (if it exists)
-	[self.appEmailTextfield setText:[appDel.keychain objectForKey:(__bridge id)kSecAttrAccount]];
-    
-
+	[appEmailTextfield setText:[appDel.keychain objectForKey:(__bridge id)kSecAttrAccount]];
     // Get password from keychain (if it exists)  
-	[self.appPasswordTextfield setText:[appDel.keychain objectForKey:(__bridge  id)kSecValueData]];
-   
+	[appPasswordTextfield setText:[appDel.keychain objectForKey:(__bridge  id)kSecValueData]];
+    
+    if(!appDel.saveInfoBOOl)[savePasswordButton setBackgroundImage:[UIImage imageNamed:@"RememberMeIconUnchecked.png"] forState:UIControlStateNormal];
+    else[savePasswordButton setBackgroundImage:[UIImage imageNamed:@"RememberMeIcon.png"] forState:UIControlStateNormal];
+  
+//[appEmailTextfield setText:@"paul.e.rudolph@gmail.com"];
+  // [appPasswordTextfield setText:@"Duc620ie"];
+    
+   [appEmailTextfield setText:@"prudolph@icuetv.com"];
+   [appPasswordTextfield setText:@"password"];
 
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
@@ -79,42 +85,54 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
 
 
 -(IBAction)loginSubmit{
-    
-    if ([self.appEmailTextfield.text length] >0 && 
-        [self.appPasswordTextfield.text length] >0) {
-       
-        //bad way to save credentials
-        //[appDel.accountInfo setObject:self.appEmailTextfield.text forKey:@"email"];
-        //[appDel.accountInfo setObject:self.appPasswordTextfield.text forKey:@"password"];
  
-        // Store username to keychain 	
-        [appDel.keychain setObject:self.appEmailTextfield.text forKey:(__bridge id)kSecAttrAccount];
-        
- 		// Store password to keychain
-        [appDel.keychain setObject:self.appPasswordTextfield.text forKey:(__bridge  id)kSecValueData];    	    
-
-#warning pull user data here;
-        [self dismissModalViewControllerAnimated:YES];
+    Validator *validator = [[Validator alloc]init];
+        if([validator isThisValidUsername:self.appEmailTextfield.text andPassWord:self.appPasswordTextfield.text].length==0){
+          [submitButton setEnabled:NO];
+          [appDel.keychain setObject:self.appEmailTextfield.text forKey:(__bridge id)kSecAttrAccount]; // Store username to keychain 	
+          [appDel.keychain setObject:self.appPasswordTextfield.text forKey:(__bridge  id)kSecValueData];// Store password to keychain    	    
+          [appDel.loadIndicator startAnimating];
+          [appDel checkCredentials];
     }
     else{
-  
-     missingInfoAlert = [[UIAlertView alloc] initWithTitle:[appDel.appText objectForKey:@"Missing_Login_Info-Title"] 
-                        message:[appDel.appText objectForKey:@"Missing_Login_Info-Msg"] delegate:self cancelButtonTitle:[appDel.appText objectForKey:@"Missing_Login_Info-Btn"]
-                                         otherButtonTitles: nil];
-        
-        [missingInfoAlert show];
-        
-      
+        [appDel displayErrorMsgToUserWithTitle:[validator.validationMsgs objectForKey:@"Invalid_UnamePass-Title"] andMsg:[validator isThisValidUsername:self.appEmailTextfield.text andPassWord:self.appPasswordTextfield.text]];
     }
-    
+    [submitButton setEnabled:YES];
+
 }
 
 -(IBAction)signUpSelected:(id)sender{
     SignUpModalViewController *signUpView = [[SignUpModalViewController alloc]init];
-    [self presentModalViewController:signUpView animated:YES];
-//    [self.navigationController presentModalViewController:signUpView animated:YES];
-    
+    signUpView.signUp=YES;
+    if ([appDel testConnection]) {
+        [self presentModalViewController:signUpView animated:YES];
+    }
+    else
+        [appDel displayErrorMsgToUserWithTitle:[appDel.appText objectForKey:@"No_Conn-Title"] andMsg:[appDel.appText objectForKey:@"No_Conn-Msg"]];
+}
 
+-(IBAction)loginOptions:(id)sender{
+    if(((UIButton*)sender).tag==5){
+        if(appDel.saveInfoBOOl){
+                appDel.saveInfoBOOl=NO;
+                [savePasswordButton setBackgroundImage:[UIImage imageNamed:@"RememberMeIconUnchecked.png"] forState:UIControlStateNormal];
+        }
+        else {
+            appDel.saveInfoBOOl=YES;
+            [savePasswordButton setBackgroundImage:[UIImage imageNamed:@"RememberMeIcon.png"] forState:UIControlStateNormal];
+            }
+    }    
+    if(((UIButton*)sender).tag==6){
+        SignUpModalViewController *signUpView = [[SignUpModalViewController alloc]init];
+        signUpView.signUp=NO;
+        if ([appDel testConnection]) {
+            [self presentModalViewController:signUpView animated:YES];
+        }
+        else
+            [appDel displayErrorMsgToUserWithTitle:[appDel.appText objectForKey:@"No_Conn-Title"] andMsg:[appDel.appText objectForKey:@"No_Conn-Msg"]];
+    }
+    
+    
 }
 
 #pragma Mark - textfield functions
@@ -134,27 +152,20 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
     CGFloat numerator =
     midline - viewRect.origin.y- MINIMUM_SCROLL_FRACTION * viewRect.size.height;
     CGFloat denominator =(MAXIMUM_SCROLL_FRACTION - MINIMUM_SCROLL_FRACTION)* viewRect.size.height;
-    
     CGFloat heightFraction = numerator / denominator;
-    
-    if (heightFraction < 0.0)
-    {
+    if (heightFraction < 0.0){
         heightFraction = 0.0;
-    }
-    else if (heightFraction > 1.0)
-    {
+        }
+    else if (heightFraction > 1.0){
         heightFraction = 1.0;
     }
-    
     UIInterfaceOrientation orientation =
     [[UIApplication sharedApplication] statusBarOrientation];
     if (orientation == UIInterfaceOrientationPortrait ||
-        orientation == UIInterfaceOrientationPortraitUpsideDown)
-    {
+        orientation == UIInterfaceOrientationPortraitUpsideDown){
         animatedDistance = floor(PORTRAIT_KEYBOARD_HEIGHT * heightFraction);
     }
-    else
-    {
+    else{
         animatedDistance = floor(LANDSCAPE_KEYBOARD_HEIGHT * heightFraction);
     }
     
@@ -164,9 +175,7 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationBeginsFromCurrentState:YES];
     [UIView setAnimationDuration:KEYBOARD_ANIMATION_DURATION];
-    
     [self.view setFrame:viewFrame];
-    
     [UIView commitAnimations];
 }
 
@@ -174,13 +183,10 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
 {
     CGRect viewFrame = self.view.frame;
     viewFrame.origin.y += animatedDistance;
-    
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationBeginsFromCurrentState:YES];
     [UIView setAnimationDuration:KEYBOARD_ANIMATION_DURATION];
-    
     [self.view setFrame:viewFrame];
-    
     [UIView commitAnimations];
     
 }
@@ -188,7 +194,6 @@ static const CGFloat LANDSCAPE_KEYBOARD_HEIGHT = 162;
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];
-    
     return YES;
 }
 

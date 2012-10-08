@@ -11,28 +11,48 @@
  */
 
 #import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
 #import "Item.h"
+#import "ScrollingImage.h"
+#import "Address.h"
+#import "CreditCard.h"
 @interface Order : NSObject{
-    NSString    *orderNumber,*orderStatus,*purchaseDate;
+      
+    NSString    *orderNumber,*orderStatus,*purchaseDate,*paymentInfo;
     NSArray     *items,*orderImageStack;
-
-    double      orderTotal,orderShippingTotal,orderSubTotal;
-    
+   
+    Address     *orderAddress;
+    double      orderTotal,orderTaxTotal,orderShippingTotal,orderSubTotal;
+    ScrollingImage * scrollimage; 
 
 }
 @property (nonatomic,retain) NSString     *orderNumber,
                                           *orderStatus,
-                                          *purchaseDate;
+                                          *purchaseDate,*paymentInfo;
 
 @property (nonatomic,retain) NSArray      *items,*orderImageStack;
 
 @property  double       orderTotal,
+                        orderTaxTotal,
                         orderShippingTotal,
                         orderSubTotal;
+
+@property(nonatomic,retain) Address         *orderAddress;
+@property(nonatomic,retain) ScrollingImage *scrollimage;
+@property(nonatomic) BOOL individuallyUpdated;
+@property(nonatomic) BOOL cancelable;
 
 -(id)initWithOrderNumber:(NSString *)   oNumber				
              orderStatus:(NSString*)    oStatus
             purchaseDate:(NSString*)    oPurchDate
                    items:(NSArray*)     oItems
-           shippingTotal:(NSString *)   oShipTotal;
+              orderTotal:(NSString*)    oGrandTotal
+           shippingTotal:(NSString *)   oShipTotal
+                subTotal:(NSString*)    oSubTotal
+                taxTotal:(NSString*)    oTaxTotal
+            isCancelable:(NSString*)    oCancel;
+
+-(void)organizeImageStack;
+-(void)addPaymentInfoObject:(NSString *)object;
+
 @end

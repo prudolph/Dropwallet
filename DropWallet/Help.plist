@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>*Gen_Q</key>
+	<string>General FAQs</string>
+	<key>*Acct_Q</key>
+	<string>Account FAQs</string>
+	<key>*Order_Q</key>
+	<string>Order FAQs</string>
+	<key>*Ship_Q</key>
+	<string>Shipping FAQs</string>
+	<key>*Bill_Q</key>
+	<string>Billing FAQs</string>
+	<key>*Return_Q</key>
+	<string>Return Policy FAQs</string>
+	<key>GEN-(000,100)What is DropWallet?</key>
+	<string>DropWallet is a digital content commerce solution that empowers you to purchase products and services directly from within digital publications, their websites and their mobile apps.</string>
+	<key>GEN-(000,000)What can I do within the DropWallet app?</key>
+	<string>As a DropWallet member, you can manage your orders and account information within the free DropWallet app. You can also track shipments. To purchase products and services using your DropWallet account, shop one of the apps or websites powered by DropWallet.</string>
+	<key>GEN-(000,000)Are there any fees to becoming a DropWallet member?</key>
+	<string>No, DropWallet membership is absolutely free.
+</string>
+	<key>ACT-(000,000)What do I do if I forgot my password?</key>
+	<string>If you forgot your password, please visit DropWallet at www.mydropwallet.com and click &quot;Forgot Your Password.&quot; Follow the steps as prompted, and an email with a temporary password will be issued to your registered email account. Sign in with the temporary password, and edit your password information as needed.</string>
+	<key>ACT-(000,000)How do I change my contact information within the DropWallet app?</key>
+	<string>Once signed in, you may change your contact information under “Account.” Select “Personal Settings” to update this information.</string>
+	<key>ACT-(040,000)Is the DropWallet app the only place where I can manage my account?</key>
+	<string>No, you may also sign in at www.mydropwallet.com to manage your account.</string>
+	<key>ACT-(000,000)How do I sign out of the DropWallet app?</key>
+	<string>You may click &quot;Sign Out&quot; on the Account page.</string>
+	<key>ORD-(000,000)How do I place an order?</key>
+	<string>As a DropWallet member, you have the opportunity to place an order for all interactive DropWallet enabled products. The Real Simple Gift Guide is currently the only place where you can order a product via DropWallet. Download the free Real Simple Gift Guide app in the iTunes store.</string>
+	<key>ORD-(020,140)How can I track an order?</key>
+	<string>Once signed in to the DropWallet app, click on the order you would like to track under “Activity.” On the “Order Details” screen, click the tracking number, and you will be taken to a tracking page. If you do not see a tracking number, your order has not yet been shipped.</string>
+	<key>ORD-(020,000)Where can I view my order history?</key>
+	<string>Click on “Activity” to view your order history.</string>
+	<key>ORD-(000,000)Can I cancel my order?</key>
+	<string>Once an order is placed, you have 30 minutes to cancel your order. To cancel an order, sign in to the DropWallet app and go to “Activity.” Click on the order you would like to cancel, and click the “Cancel Order” button. This button will automatically disappear after 30 minutes.</string>
+	<key>SHI-(000,000)Is shipping really free?</key>
+	<string>DropWallet enabled products will be shipped to you free of charge via standard ground shipping.</string>
+	<key>SHI-(000,040)Which delivery service will you use to ship my purchase?</key>
+	<string>DropWallet allows our suppliers to ship via the delivery service of their choice.</string>
+	<key>SHI-(000,040)How long will my order take to arrive?</key>
+	<string>With regular shipping, your order should arrive within 8-14 business days.</string>
+	<key>SHI-(000,000)Can I ship an order to a different location than my home or billing address?</key>
+	<string>Yes, you can choose to ship your purchase to your primary address or you can add additional addresses via the DropWallet app.  You can also add additional shipping addresses by signing in to your online account.</string>
+	<key>BIL-(000,000)Do you charge sales tax for orders placed via DropWallet?</key>
+	<string>DropWallet honors our supplier’s sales tax regulations and thus this is subject to your supplier.</string>
+	<key>BIL-(040,000)What are the available payment methods to purchase a product?</key>
+	<string>All major credit and debit cards are supported including Visa, MasterCard, American Express, Discover and Diners Club. We only accept U.S. billing addresses.</string>
+	<key>BIL-(000,000)How do I change or add a payment method?</key>
+	<string>Once signed in, go to “Account” and click on “Payment Methods.” You will be directed to the page where you are able to edit, add or delete methods of payment. You also will be able to set your primary payment method.</string>
+	<key>BIL-(000,000)Can I change my payment method after I have made a purchase?</key>
+	<string>Once an order is placed, you cannot change your payment method for that order.</string>
+	<key>BIL-(040,000)What merchant of record name will appear on my credit card statement?</key>
+	<string>DropWallet will be listed as the merchant of record.</string>
+	<key>BIL-(000,240)What is a CVV2 Code?</key>
+	<string>This is a card security code that helps validate a genuine payment card is being used during a transaction, especially in situations like internet or telephone orders where the card is not present. For Visa, MasterCard and Discover cards, the card code is the last 3-digit number located on the back of your card on or above your signature line. For an AmericanExpress® card, it is the 4 digits on the front above the end of your card number.</string>
+	<key>BIL-(000,000)What if I can&apos;t read my Card Security Code?</key>
+	<string>Please contact your issuing credit or debit card provider to resolve the issue. For your security, we require a card security code to verify a payment method.</string>
+	<key>RET-(020,000)What is DropWallet&apos;s return policy?</key>
+	<string>To ensure a hassle-free return experience, DropWallet requires you to process returns via the Customer Portal at www.mydropwallet.com. It’s simple—you request a free return-shipping label, we email you the label on our next business day and you return the item via the mail to the supplier. Merchandise can only be returned within the time frame and conditions established by each supplier’s return policy. </string>
+	<key>RET-(000,140)Do I return my purchase to DropWallet or the supplier listed?</key>
+	<string>Once you request and receive your free shipping-return label from DropWallet, you return your item(s) directly to the supplier(s) listed. The supplier’s address will be included in the return-shipping label. Purchases may not be returned to brick and mortar storefronts.</string>
+	<key>RET-(000,000)Can I return my item directly to the supplier’s storefront?</key>
+	<string>No, you must return your purchase via mail using your free return-shipping label.</string>
+	<key>RET-(020,000)How do I get a shipping label?</key>
+	<string>Sign into the DropWallet customer portal at www.mydropwallet.com to request a free return-shipping label. Once signed in, go to Order History, and click on your order. Within the order, click return and complete the form. We will email you your free shipping label on our next business day.</string>
+	<key>RET-(000,000)How can I track a return?</key>
+	<string>You can view completed returns at the bottom of the order&apos;s summary page in Your Account. You can also track the status of your return shipment using the UPS tracking number from your return-mailing label.</string>
+	<key>RET-(000,000)I&apos;ve returned my item; how soon will I receive my refund?</key>
+	<string>You should receive a refund in 8-10 business days. The refund will be applied to your original method of payment.</string>
+</dict>
+</plist>

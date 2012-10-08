@@ -10,24 +10,31 @@
 
 @interface Item : NSObject{
 
-    NSString    *itemDesc,*itemID;
+    
+    NSString    *itemName,*itemID,*status,*imageUrl;
     UIImage     *itemImage;
+    NSMutableDictionary     *shippingUrls;
     int         *qtyPurchased;
-    double      price;
+    double      itemTotal;
     
 
 }
-@property (nonatomic,retain) NSString *itemDesc,*itemID;
+@property (nonatomic,retain) NSString *itemName,*itemID,*status,*imageUrl;
 @property (nonatomic,retain) UIImage  *itemImage;
+@property (nonatomic,retain)  NSMutableDictionary *shippingUrls;
 @property  int *qtyPurchased;
 @property double price;
 
 
--(id)initWithItemDesc:(NSString *)iDesc			
+-(id)initWithItemName:(NSString *)iName			
                itemID:(NSString*)iID
+               status:(NSString*)iStatus
                 price:(NSString*)iPrice
          qtyPurchased:(NSString*)qty
-            itemImage:(UIImage*) image;
-@end
+             imageUrl:(NSString*)iUrl
+         shippingUrls:(NSArray*)sUrls ;
 
+-(NSMutableDictionary*)createDictionaryForUrls:(NSArray*)urlArray;
+-(NSString*)convertStatus:(NSString*)inStatus;
+@end
 

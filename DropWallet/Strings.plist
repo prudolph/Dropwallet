@@ -2,11 +2,187 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Missing_Login_Info-Title</key>
-	<string>Hey!, You Forgot Something</string>
+	<key>LOGIN</key>
+	<string>LOGIN</string>
 	<key>Missing_Login_Info-Msg</key>
-	<string>Email or password fields are blank</string>
+	<string>Your email and/or password fields are blank.</string>
+	<key>Missing_Login_Info-Title</key>
+	<string>Please try again.</string>
 	<key>Missing_Login_Info-Btn</key>
 	<string>Ok</string>
+	<key>Failed_Login-Title</key>
+	<string>Please try again.</string>
+	<key>Failed_Login-Msg</key>
+	<string>User name and/or password is invalid.</string>
+	<key>Success_Login-Title</key>
+	<string>Thank you for registering!</string>
+	<key>Success_Login-Msg</key>
+	<string>You are officially armed with Shopping Powers. Please sign in.</string>
+	<key>New item - 2</key>
+	<string></string>
+	<key>ROOTACCOUNTVIEWCONTROLLER</key>
+	<string></string>
+	<key>Account_View-Title</key>
+	<string>Account</string>
+	<key>Account_Settings-Personal</key>
+	<string>Personal Settings</string>
+	<key>Account_Settings-Password</key>
+	<string>Change Password</string>
+	<key>Account_Settings-Payment</key>
+	<string>Payment Methods</string>
+	<key>Account_Settings-Address</key>
+	<string>Address Book</string>
+	<key>PERSONALSETTINGS</key>
+	<string></string>
+	<key>Personal_Settings-Title</key>
+	<string>Personal Settings</string>
+	<key>Personal_Settings-Fname_Lbl</key>
+	<string>First Name</string>
+	<key>Personal_Settings-Lname_Lbl</key>
+	<string>Last Name</string>
+	<key>Personal_Settings-Email_Lbl</key>
+	<string>Current Email</string>
+	<key>PersonalInfo_Changed-Title</key>
+	<string>Success</string>
+	<key>PersonalInfo_Changed-Msg</key>
+	<string>Personal info successfully updated.</string>
+	<key>PersonalInfo_Unchanged-Title</key>
+	<string>Woops</string>
+	<key>PersonalInfo_Unchanged-Msg</key>
+	<string>Something went wrong when updating your personal info.</string>
+	<key>CHANGEPASSWORD</key>
+	<string></string>
+	<key>Change_Password-Title</key>
+	<string>Change Password</string>
+	<key>Change_Password-Current_Lbl</key>
+	<string>Current Password</string>
+	<key>Change_Password-NewPass_Lbl</key>
+	<string>New Password</string>
+	<key>Change_Password-Confirm_Lbl</key>
+	<string>Retype Password</string>
+	<key>Password_Changed-Title</key>
+	<string>Success</string>
+	<key>Password_Changed-Msg</key>
+	<string>Your password has been updated successfully.</string>
+	<key>Password_Unchanged-Title</key>
+	<string>Please try again.</string>
+	<key>Password_Unchaged-Msg</key>
+	<string>There was an error when updating your password.</string>
+	<key>PAYMENTMETHODS</key>
+	<string></string>
+	<key>Payment_Methods-Title</key>
+	<string>Payment Methods</string>
+	<key>ADDRESSBOOK</key>
+	<string></string>
+	<key>Address_Book-Title</key>
+	<string>AddressBook</string>
+	<key>NOENTRIESMSG</key>
+	<string></string>
+	<key>No_Entries_Alert-Msg</key>
+	<string>Would you like to add one to your account?</string>
+	<key>No_Entries_Alert-CC_Title</key>
+	<string>No credit cards saved.</string>
+	<key>No_Entries_Alert-Address_Title</key>
+	<string>No addresses saved.</string>
+	<key>No_Entries_Alert-Yes_btn</key>
+	<string>Yes</string>
+	<key>No_Entries_Alert-No_btn</key>
+	<string>No</string>
+	<key>ADDITEMVIEW</key>
+	<string></string>
+	<key>Dup_Address-Title</key>
+	<string>Duplicate Address</string>
+	<key>Dup_Address-Msg</key>
+	<string>It seems you have already saved this address.</string>
+	<key>Edit_Item_Back_Btn_Title</key>
+	<string>Back</string>
+	<key>Edit_Item_Addy_Switch-Add_Book</key>
+	<string>Address Book</string>
+	<key>Edit_Item_Addy_Switch-Edit_Cur</key>
+	<string>Edit Current</string>
+	<key>CCLABELS</key>
+	<string></string>
+	<key>CCLabel-Type_Lbl</key>
+	<string>Credit Card Type</string>
+	<key>CCLabel-Fname_Lbl</key>
+	<string>First Name</string>
+	<key>CCLabel-Lname_Lbl</key>
+	<string>Last Name</string>
+	<key>CCLabel-CC#_Lbl</key>
+	<string>Credit Card #</string>
+	<key>CCLabel-Exp_Lbl</key>
+	<string>Exp Date</string>
+	<key>CCLabel-cvv2_Lbl</key>
+	<string>CVV2</string>
+	<key>CCLabel-Prim_Lbl</key>
+	<string>Set as primary?</string>
+	<key>ADDLABELS</key>
+	<string></string>
+	<key>Add_Label-ToName_Lbl</key>
+	<string>Name</string>
+	<key>Add_Label-Add1_Lbl</key>
+	<string>Address 1</string>
+	<key>Add_Label-Add2_Lbl</key>
+	<string>Address 2</string>
+	<key>Add_Label-City_Lbl</key>
+	<string>City</string>
+	<key>Add_Label-State_Lbl</key>
+	<string>State</string>
+	<key>Add_Label-Zip_Lbl</key>
+	<string>Zip</string>
+	<key>Add_Label-Pri_Lbl</key>
+	<string>Set as primary?</string>
+	<key>Edit_CC_View-Title</key>
+	<string>Edit Credit Card</string>
+	<key>New_CC_View-Title</key>
+	<string>New Credit Card</string>
+	<key>Edit_ADD_View-Title</key>
+	<string>Edit Address</string>
+	<key>New_ADD_View-Title</key>
+	<string>New Address</string>
+	<key>EDITITEMTABLEVIEWHEADERS</key>
+	<string></string>
+	<key>CC_Info_Header</key>
+	<string>Credit Card Information</string>
+	<key>Add_Info_Header</key>
+	<string>Address Information</string>
+	<key>VALIDATIONMSG</key>
+	<string></string>
+	<key>Validation_Msg-Title</key>
+	<string>Please try again.</string>
+	<key>Missing_Field_Valid-Title</key>
+	<string>Please try again.</string>
+	<key>Missing_Field_Valid-Msg</key>
+	<string>Enter the correct info in all the fields.</string>
+	<key>UPDATEDCCMSG</key>
+	<string></string>
+	<key>Edit_CC_Success-Title</key>
+	<string>Success</string>
+	<key>Edit_CC_Success-Msg</key>
+	<string>Your card was successfully updated.</string>
+	<key>Edit_CC_Fail-Title</key>
+	<string>Please try again.</string>
+	<key>Edit_CC_Fail-Msg</key>
+	<string>There was an error when updating your credit card.</string>
+	<key>Edit_Add_Success-Title</key>
+	<string>Success</string>
+	<key>Edit_Add_Success-Msg</key>
+	<string>Your address has been saved successfully.</string>
+	<key>Edit_Add_Fail-Title</key>
+	<string>Please try again.</string>
+	<key>Edit_Add_Fail-Msg</key>
+	<string>There was an error when saving your address.</string>
+	<key>No_Conn-Title</key>
+	<string>No Internet Connection</string>
+	<key>No_Conn-Msg</key>
+	<string>Unable to reach Dropwallet at this time. Please check your internet connection.</string>
+	<key>GENERAL MESSAGES</key>
+	<string></string>
+	<key>Gen_Conn_Fail-Title</key>
+	<string>Please try again.</string>
+	<key>Gen_Conn_Fail-Msg</key>
+	<string>There was an error with your request.</string>
+	<key>Order_Detail_NoDisp-Msg</key>
+	<string>The order details you are looking for cannot be displayed at this time.</string>
 </dict>
 </plist>

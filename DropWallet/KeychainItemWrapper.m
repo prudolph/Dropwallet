@@ -296,7 +296,7 @@ Keychain API expects as a validly constructed container class.
         // An implicit assumption is that you can only update a single item at a time.
 		
         result = SecItemUpdate((__bridge CFDictionaryRef)updateItem, (__bridge CFDictionaryRef)tempCheck);
-		NSAssert( result == noErr, @"Couldn't update the Keychain Item." );
+		//NSAssert( result == noErr, @"Couldn't update the Keychain Item." );
     }
     else
     {

@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="8.00">
 	<data>
-		<int key="IBDocument.SystemTarget">1280</int>
-		<string key="IBDocument.SystemVersion">10K549</string>
-		<string key="IBDocument.InterfaceBuilderVersion">1938</string>
-		<string key="IBDocument.AppKitVersion">1038.36</string>
-		<string key="IBDocument.HIToolboxVersion">461.00</string>
+		<int key="IBDocument.SystemTarget">1296</int>
+		<string key="IBDocument.SystemVersion">11E53</string>
+		<string key="IBDocument.InterfaceBuilderVersion">2182</string>
+		<string key="IBDocument.AppKitVersion">1138.47</string>
+		<string key="IBDocument.HIToolboxVersion">569.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">933</string>
+			<string key="NS.object.0">1181</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>IBUITableViewCell</string>
+			<string>IBUIImageView</string>
 			<string>IBUILabel</string>
 			<string>IBUITextField</string>
 			<string>IBProxyObject</string>
@@ -43,55 +44,61 @@
 							<object class="IBUILabel" id="21372073">
 								<reference key="NSNextResponder" ref="272988477"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{11, 11}, {122, 21}}</string>
+								<string key="NSFrame">{{11, 11}, {121, 21}}</string>
 								<reference key="NSSuperview" ref="272988477"/>
-								<reference key="NSNextKeyView" ref="481397178"/>
+								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="397345328"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
 								<int key="IBUIContentMode">7</int>
 								<int key="IBUITag">40</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<string key="IBUIText">Label</string>
+								<string key="IBUIText">Current Password</string>
 								<object class="NSColor" key="IBUITextColor">
-									<int key="NSColorSpace">2</int>
-									<bytes key="NSRGB">MC4yMjM1Mjk0MjgyIDAuNjcwNTg4MjU0OSAwLjkyNTQ5MDI2MDEAA</bytes>
+									<int key="NSColorSpace">1</int>
+									<bytes key="NSRGB">MC4wNzc3OTM0NzQzMSAwLjY1NDgzNDQwNTEgMQA</bytes>
 								</object>
 								<nil key="IBUIHighlightedColor"/>
 								<int key="IBUIBaselineAdjustment">0</int>
-								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
 								<float key="IBUIMinimumFontSize">10</float>
 								<object class="IBUIFontDescription" key="IBUIFontDescription">
-									<string key="name">Helvetica-Bold</string>
-									<string key="family">Helvetica</string>
+									<string key="name">Arial-BoldMT</string>
+									<string key="family">Arial</string>
 									<int key="traits">2</int>
-									<double key="pointSize">13</double>
+									<double key="pointSize">14</double>
 								</object>
 								<object class="NSFont" key="IBUIFont">
-									<string key="NSName">Helvetica-Bold</string>
-									<double key="NSSize">13</double>
+									<string key="NSName">Arial-BoldMT</string>
+									<double key="NSSize">14</double>
 									<int key="NSfFlags">16</int>
 								</object>
+								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
 							</object>
 							<object class="IBUITextField" id="481397178">
 								<reference key="NSNextResponder" ref="272988477"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{135, 4}, {145, 37.5}}</string>
+								<string key="NSFrame">{{108, 6}, {189, 31}}</string>
 								<reference key="NSSuperview" ref="272988477"/>
+								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="573719920"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
+								<int key="IBUIContentMode">1</int>
 								<int key="IBUITag">50</int>
 								<object class="IBUIAccessibilityConfiguration" key="IBUIAccessibilityConfiguration">
 									<integer value="512" key="IBUIAccessibilityTraits"/>
 								</object>
+								<string key="IBUIContentStretch">{{0.49999999999999994, 0}, {1, 1}}</string>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<int key="IBUIContentHorizontalAlignment">3</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
 								<string key="IBUIText"/>
+								<int key="IBUIBorderStyle">2</int>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">2</int>
 									<bytes key="NSRGB">MC4xMzMzMzMzNDAzIDAuMTIxNTY4NjM1MSAwLjEyNTQ5MDIwMzUAA</bytes>
 								</object>
-								<int key="IBUITextAlignment">1</int>
 								<bool key="IBUIClearsOnBeginEditing">YES</bool>
 								<bool key="IBUIAdjustsFontSizeToFit">YES</bool>
 								<float key="IBUIMinimumFontSize">17</float>
@@ -99,20 +106,83 @@
 									<int key="IBUIReturnKeyType">9</int>
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								</object>
+								<object class="NSCustomResource" key="IBUIBackground" id="106347455">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">FieldBackground.png</string>
+								</object>
 								<int key="IBUIClearButtonMode">1</int>
-								<object class="IBUIFontDescription" key="IBUIFontDescription">
-									<int key="type">2</int>
+								<object class="IBUIFontDescription" key="IBUIFontDescription" id="217702217">
+									<string key="name">ArialMT</string>
+									<string key="family">Arial</string>
+									<int key="traits">0</int>
 									<double key="pointSize">14</double>
 								</object>
-								<object class="NSFont" key="IBUIFont">
-									<string key="NSName">Helvetica-Bold</string>
+								<object class="NSFont" key="IBUIFont" id="264293792">
+									<string key="NSName">ArialMT</string>
 									<double key="NSSize">14</double>
 									<int key="NSfFlags">16</int>
+								</object>
+							</object>
+							<object class="IBUITextField" id="397345328">
+								<reference key="NSNextResponder" ref="272988477"/>
+								<int key="NSvFlags">-2147483356</int>
+								<string key="NSFrame">{{100, 6}, {145, 31}}</string>
+								<reference key="NSSuperview" ref="272988477"/>
+								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="481397178"/>
+								<object class="NSColor" key="IBUIBackgroundColor" id="1026445481">
+									<int key="NSColorSpace">3</int>
+									<bytes key="NSWhite">MQA</bytes>
+								</object>
+								<bool key="IBUIOpaque">NO</bool>
+								<bool key="IBUIClipsSubviews">YES</bool>
+								<int key="IBUIContentMode">1</int>
+								<int key="IBUITag">60</int>
+								<object class="IBUIAccessibilityConfiguration" key="IBUIAccessibilityConfiguration">
+									<integer value="512" key="IBUIAccessibilityTraits"/>
+								</object>
+								<string key="IBUIContentStretch">{{0.49999999999999994, 0}, {1, 1}}</string>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<int key="IBUIContentHorizontalAlignment">3</int>
+								<int key="IBUIContentVerticalAlignment">0</int>
+								<string key="IBUIText"/>
+								<int key="IBUIBorderStyle">2</int>
+								<object class="NSColor" key="IBUITextColor">
+									<int key="NSColorSpace">2</int>
+									<bytes key="NSRGB">MC4xMzMzMzMzNDAzIDAuMTIxNTY4NjM1MSAwLjEyNTQ5MDIwMzUAA</bytes>
+								</object>
+								<bool key="IBUIClearsOnBeginEditing">YES</bool>
+								<bool key="IBUIAdjustsFontSizeToFit">YES</bool>
+								<float key="IBUIMinimumFontSize">17</float>
+								<object class="IBUITextInputTraits" key="IBUITextInputTraits">
+									<int key="IBUIReturnKeyType">9</int>
+									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								</object>
+								<reference key="IBUIBackground" ref="106347455"/>
+								<int key="IBUIClearButtonMode">1</int>
+								<reference key="IBUIFontDescription" ref="217702217"/>
+								<reference key="IBUIFont" ref="264293792"/>
+							</object>
+							<object class="IBUIImageView" id="573719920">
+								<reference key="NSNextResponder" ref="272988477"/>
+								<int key="NSvFlags">-2147483356</int>
+								<string key="NSFrame">{{256, 9}, {41, 25}}</string>
+								<reference key="NSSuperview" ref="272988477"/>
+								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
+								<string key="NSReuseIdentifierKey">_NS:9</string>
+								<int key="IBUITag">80</int>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<object class="NSCustomResource" key="IBUIImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">VisaCard.png</string>
 								</object>
 							</object>
 						</array>
 						<string key="NSFrameSize">{300, 43}</string>
 						<reference key="NSSuperview" ref="1006202426"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="21372073"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
@@ -127,11 +197,9 @@
 				</array>
 				<string key="NSFrameSize">{300, 44}</string>
 				<reference key="NSSuperview"/>
+				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="272988477"/>
-				<object class="NSColor" key="IBUIBackgroundColor">
-					<int key="NSColorSpace">3</int>
-					<bytes key="NSWhite">MQA</bytes>
-				</object>
+				<reference key="IBUIBackgroundColor" ref="1026445481"/>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				<reference key="IBUIContentView" ref="272988477"/>
 				<string key="IBUIReuseIdentifier">editCell</string>
@@ -154,6 +222,14 @@
 						<reference key="destination" ref="372490531"/>
 					</object>
 					<int key="connectionID">9</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="397345328"/>
+						<reference key="destination" ref="372490531"/>
+					</object>
+					<int key="connectionID">13</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -179,10 +255,17 @@
 						<int key="objectID">3</int>
 						<reference key="object" ref="1006202426"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="481397178"/>
 							<reference ref="21372073"/>
+							<reference ref="481397178"/>
+							<reference ref="397345328"/>
+							<reference ref="573719920"/>
 						</array>
 						<reference key="parent" ref="0"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">5</int>
+						<reference key="object" ref="481397178"/>
+						<reference key="parent" ref="1006202426"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">4</int>
@@ -190,8 +273,13 @@
 						<reference key="parent" ref="1006202426"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">5</int>
-						<reference key="object" ref="481397178"/>
+						<int key="objectID">12</int>
+						<reference key="object" ref="397345328"/>
+						<reference key="parent" ref="1006202426"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">14</int>
+						<reference key="object" ref="573719920"/>
 						<reference key="parent" ref="1006202426"/>
 					</object>
 				</array>
@@ -201,6 +289,8 @@
 				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="-2.CustomClassName">UIResponder</string>
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="12.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="14.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="3.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="4.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="5.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -209,13 +299,266 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">10</int>
+			<int key="maxID">14</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
+		<object class="IBClassDescriber" key="IBDocument.Classes">
+			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">AccountDetailViewController</string>
+					<string key="superclassName">UIViewController</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="backgroundTap:">id</string>
+						<string key="newItem:">id</string>
+						<string key="savePersonalInfo:">id</string>
+						<string key="updatePass:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="backgroundTap:">
+							<string key="name">backgroundTap:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="newItem:">
+							<string key="name">newItem:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="savePersonalInfo:">
+							<string key="name">savePersonalInfo:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="updatePass:">
+							<string key="name">updatePass:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="accountDetailTableView">UITableView</string>
+						<string key="addressTableViewCell">UITableViewCell</string>
+						<string key="ccTableViewCell">UITableViewCell</string>
+						<string key="currentPass">UITextField</string>
+						<string key="editItemViewController">EditItemViewController</string>
+						<string key="editTableViewCell">UITableViewCell</string>
+						<string key="nPass">UITextField</string>
+						<string key="nPass2">UITextField</string>
+						<string key="userEmail">UITextField</string>
+						<string key="userFName">UITextField</string>
+						<string key="userLName">UITextField</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="accountDetailTableView">
+							<string key="name">accountDetailTableView</string>
+							<string key="candidateClassName">UITableView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="addressTableViewCell">
+							<string key="name">addressTableViewCell</string>
+							<string key="candidateClassName">UITableViewCell</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="ccTableViewCell">
+							<string key="name">ccTableViewCell</string>
+							<string key="candidateClassName">UITableViewCell</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="currentPass">
+							<string key="name">currentPass</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="editItemViewController">
+							<string key="name">editItemViewController</string>
+							<string key="candidateClassName">EditItemViewController</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="editTableViewCell">
+							<string key="name">editTableViewCell</string>
+							<string key="candidateClassName">UITableViewCell</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="nPass">
+							<string key="name">nPass</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="nPass2">
+							<string key="name">nPass2</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="userEmail">
+							<string key="name">userEmail</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="userFName">
+							<string key="name">userFName</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="userLName">
+							<string key="name">userLName</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/AccountDetailViewController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">EditItemViewController</string>
+					<string key="superclassName">AccountDetailViewController</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="addressSwitched:">UISegmentedControl</string>
+						<string key="saveAddress:">id</string>
+						<string key="saveCreditcard:">id</string>
+						<string key="textFieldDoneEditing:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="addressSwitched:">
+							<string key="name">addressSwitched:</string>
+							<string key="candidateClassName">UISegmentedControl</string>
+						</object>
+						<object class="IBActionInfo" key="saveAddress:">
+							<string key="name">saveAddress:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="saveCreditcard:">
+							<string key="name">saveCreditcard:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="textFieldDoneEditing:">
+							<string key="name">textFieldDoneEditing:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="address1TextField">UITextField</string>
+						<string key="address2TextField">UITextField</string>
+						<string key="addressCell">UITableViewCell</string>
+						<string key="addressIDTextField">UITextField</string>
+						<string key="addressSwitchButton">UIButton</string>
+						<string key="addressSwitchCell">UITableViewCell</string>
+						<string key="cardTypePicker">UIPickerView</string>
+						<string key="ccCCV2TextField">UITextField</string>
+						<string key="ccExpMonYrTextField">UITextField</string>
+						<string key="ccFNameTextField">UITextField</string>
+						<string key="ccLNameTextField">UITextField</string>
+						<string key="ccNumTextField">UITextField</string>
+						<string key="ccTypeTextField">UITextField</string>
+						<string key="cityTextField">UITextField</string>
+						<string key="editItemTableView">UITableView</string>
+						<string key="exp">UITextField</string>
+						<string key="expDatePicker">UIPickerView</string>
+						<string key="primaryAddressButton">UIButton</string>
+						<string key="primaryCCButton">UIButton</string>
+						<string key="stateTextField">UITextField</string>
+						<string key="statesPicker">UIPickerView</string>
+						<string key="toNameTextField">UITextField</string>
+						<string key="zipTextField">UITextField</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="address1TextField">
+							<string key="name">address1TextField</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="address2TextField">
+							<string key="name">address2TextField</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="addressCell">
+							<string key="name">addressCell</string>
+							<string key="candidateClassName">UITableViewCell</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="addressIDTextField">
+							<string key="name">addressIDTextField</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="addressSwitchButton">
+							<string key="name">addressSwitchButton</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="addressSwitchCell">
+							<string key="name">addressSwitchCell</string>
+							<string key="candidateClassName">UITableViewCell</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="cardTypePicker">
+							<string key="name">cardTypePicker</string>
+							<string key="candidateClassName">UIPickerView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="ccCCV2TextField">
+							<string key="name">ccCCV2TextField</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="ccExpMonYrTextField">
+							<string key="name">ccExpMonYrTextField</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="ccFNameTextField">
+							<string key="name">ccFNameTextField</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="ccLNameTextField">
+							<string key="name">ccLNameTextField</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="ccNumTextField">
+							<string key="name">ccNumTextField</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="ccTypeTextField">
+							<string key="name">ccTypeTextField</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="cityTextField">
+							<string key="name">cityTextField</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="editItemTableView">
+							<string key="name">editItemTableView</string>
+							<string key="candidateClassName">UITableView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="exp">
+							<string key="name">exp</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="expDatePicker">
+							<string key="name">expDatePicker</string>
+							<string key="candidateClassName">UIPickerView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="primaryAddressButton">
+							<string key="name">primaryAddressButton</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="primaryCCButton">
+							<string key="name">primaryCCButton</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="stateTextField">
+							<string key="name">stateTextField</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="statesPicker">
+							<string key="name">statesPicker</string>
+							<string key="candidateClassName">UIPickerView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="toNameTextField">
+							<string key="name">toNameTextField</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="zipTextField">
+							<string key="name">zipTextField</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/EditItemViewController.h</string>
+					</object>
+				</object>
+			</array>
+		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
+		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
+			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaTouchPlugin.iPhoneOS</string>
+			<real value="1296" key="NS.object.0"/>
+		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<string key="IBCocoaTouchPluginVersion">933</string>
+		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="FieldBackground.png">{141, 23}</string>
+			<string key="VisaCard.png">{41, 25}</string>
+		</dictionary>
+		<string key="IBCocoaTouchPluginVersion">1181</string>
 	</data>
 </archive>

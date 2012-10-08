@@ -31,4 +31,5 @@
 -(IBAction)startScrollcycle:(id)sender;
 -(void)layoutScrollImages;
 -(void)loadImages:(NSArray*)images;
+
 @end

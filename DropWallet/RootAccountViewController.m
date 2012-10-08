@@ -13,21 +13,23 @@
 
 @synthesize accountSettings;
 @synthesize accountDetailViewController;
+@synthesize appDel;
+@synthesize accountRootTableView;
 
-- (id)initWithStyle:(UITableViewStyle)style
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithStyle:UITableViewStyleGrouped];
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-         self.title = @"Account";
-        [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
-       
+        self.appDel = (AppDelegate*)[[UIApplication sharedApplication]delegate];
+        self.title =[appDel.appText objectForKey:@"Account_View-Title"]; 
         
-       
+        
+        self.navigationController.navigationItem.backBarButtonItem.title=@"Back";
+
     }
     return self;
 }
-
-    
 
 - (void)didReceiveMemoryWarning
 {
@@ -42,8 +44,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+      
 
-    self.accountSettings =[[NSArray alloc] initWithObjects:@"Personal Settings",@"Change Password",@"Payment Methods",@"Address Book", nil];
+    self.navigationController.navigationBar.topItem.title=@"";
+
+    [self.accountRootTableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
+    [self.accountRootTableView setBackgroundColor:[UIColor whiteColor]];
+    self.accountRootTableView.contentOffset=CGPointMake(0, 45);
+    
+  self.accountSettings =[[NSArray alloc] initWithObjects:
+                           [appDel.appText objectForKey:@"Account_Settings-Personal"],
+                           [appDel.appText objectForKey:@"Account_Settings-Password"],
+                           [appDel.appText objectForKey:@"Account_Settings-Payment"],
+                           [appDel.appText objectForKey:@"Account_Settings-Address"],
+                         @"Sign Out",nil];
+    
+    //add Signout Button
+   // UIBarButtonItem *signOutButton = [[UIBarButtonItem alloc] initWithTitle: @"Sign Out" style: UIBarButtonItemStylePlain target: appDel action: @selector(logout)];
+    //  self.navigationItem.rightBarButtonItem=signOutButton;
+
 
 }
 
@@ -57,6 +76,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    [self.navigationController.navigationBar addSubview:appDel.logoImgView];
+    [appDel.logoImgView setHidden:NO];
    
 }
 
@@ -83,6 +104,31 @@
 
 #pragma mark - Table view data source
 
+//header
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    
+    if(section==0){
+        UILabel *headerLabel=[[UILabel alloc]init];
+        [headerLabel setBackgroundColor:[UIColor clearColor]];
+        [headerLabel setTextColor:[UIColor whiteColor]];
+        [headerLabel setTextAlignment:UITextAlignmentCenter];
+        [headerLabel setFont:[UIFont fontWithName:@"Arial-BoldMT" size:18.0]];
+        headerLabel.frame=CGRectMake(60, 7.0, 200, 40);
+        
+        [headerLabel setText:@"ACCOUNT"];    
+        
+        UIImageView *headerView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"HeaderImage.png"]];
+          headerView.frame=CGRectMake(0, 0, 320.00, 34.0);
+        [headerView addSubview:headerLabel ];
+        
+        return headerView;
+    }
+    else return nil;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+        return  40.0;
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
    return 1;
@@ -90,18 +136,17 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
     return [self.accountSettings count];
 }
 
 
-
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 45;
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    //NSString *key = [keys objectAtIndex:section];
-   // NSArray *nameSection = [names objectForKey:key];
     
     static NSString *CellIdentifier = @"Cell";
     
@@ -111,8 +156,23 @@
     }
     
     NSUInteger row = [indexPath row];
+    
+    cell.textLabel.backgroundColor=[UIColor clearColor];
+    UIImageView *accountSettingBG = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"AccountButtonsBG.png"]];
+     cell.backgroundView=accountSettingBG;
+    
+    
+    
     cell.textLabel.text = [self.accountSettings objectAtIndex:row];
+    
+    [cell.textLabel setFont:[UIFont fontWithName:@"Arial-BoldMT" size:18.0]];
+    [cell.textLabel setTextColor:[UIColor colorWithRed:0/255 green:170.0/255 blue:235.0/255 alpha:1.0]];
+  
+    cell.selectionStyle=UITableViewCellSelectionStyleGray;
     return cell;
+    
+    
+    
 }
 
 
@@ -120,11 +180,24 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    
+    if([indexPath row]==  [self.accountSettings count]-1){
+        [appDel logout];
+    }
+    else{
     self.accountDetailViewController = [[AccountDetailViewController alloc] init];
     self.accountDetailViewController.accountOption = [indexPath row];
-   
-    [self.navigationController pushViewController:self.accountDetailViewController animated:YES];
+        
+        UIBarButtonItem *newBackButton = [[UIBarButtonItem alloc] initWithTitle: @"Back" style: UIBarButtonItemStylePlain target: self.navigationController action: @selector(popViewControllerAnimated:)];
+        [newBackButton setTintColor:[UIColor darkGrayColor]];
+        self.navigationItem.backBarButtonItem= newBackButton;
+           [self.navigationController pushViewController:self.accountDetailViewController animated:YES];
+    }
+
+    [self.accountRootTableView cellForRowAtIndexPath:indexPath].selected =NO;
+
 }
+
+
 
 @end

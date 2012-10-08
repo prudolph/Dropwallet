@@ -13,6 +13,7 @@
     NSString    *addressID,
                 *toName,
                 *address1,
+                *address2,
                 *city,
                 *state,
                 *zip;
@@ -21,13 +22,14 @@
 
 }
 
-@property (nonatomic,retain) NSString    *addressID,*toName,*address1,*city,*state,*zip;
+@property (nonatomic,retain) NSString    *addressID,*toName,*address1,*address2,*city,*state,*zip;
 @property                    BOOL       primary;
 
 
 
 -(id)initWithName:  (NSString *)inName			
          address1:  (NSString*)inAdd1
+         address2:  (NSString*)inAdd2
              city:  (NSString*)inCity
             state:  (NSString*)inState
               zip:  (NSString*)inZip
@@ -35,5 +37,7 @@
            withID:  (NSString*)addID;
 
 -(BOOL)addressIsEqualto:(Address*)other;
-                    
+-(NSData*)asDataForUpdate;
+-(NSString*) convertToAbv:(NSString*)state; 
+-(NSString *)checkInData:(NSString*)inString;
 @end

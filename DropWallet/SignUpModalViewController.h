@@ -10,16 +10,17 @@
 #import "AppDelegate.h"
 @interface SignUpModalViewController : UIViewController<UIWebViewDelegate>{
     UIWebView *signUpWebView;
-   
     NSMutableData * receivedData;
     NSURL *url;
-    UIActivityIndicatorView *loadingIndicator;
 }
 
 @property(nonatomic,retain)IBOutlet UIWebView *signUpWebView;
-
-@property(nonatomic,retain)    NSMutableData * receivedData;
+@property(nonatomic,retain)IBOutlet UINavigationBar *signUpToolBar;
+@property (nonatomic,retain)    AppDelegate *appDel;
+@property(nonatomic,retain)  NSMutableData * receivedData;
 @property(nonatomic,retain)  NSURL *url;
-@property(nonatomic,retain) UIActivityIndicatorView *loadIndicator;
+@property(nonatomic,retain)  UIActivityIndicatorView *loadIndicator;
+@property (nonatomic)BOOL signUp;
 -(IBAction)cancelbuttonPressed;
+
 @end

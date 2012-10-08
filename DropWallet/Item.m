@@ -10,9 +10,11 @@
 
 @implementation Item
 
-@synthesize itemID,itemDesc;
+@synthesize itemName,itemID,status,imageUrl;
 //Image
 @synthesize itemImage;
+//Array
+@synthesize shippingUrls;
 //int
 @synthesize qtyPurchased;
 //double
@@ -24,20 +26,61 @@
     }     
     return self;
 }
--(id)initWithItemDesc:(NSString *)iDesc			
+-(id)initWithItemName:(NSString *)iName			
                itemID:(NSString*)iID
+               status:(NSString*)iStatus
                 price:(NSString*)iPrice
          qtyPurchased:(NSString*)qty
-            itemImage:(UIImage*) image{
+            imageUrl:(NSString*)iUrl
+         shippingUrls:(NSArray*)sUrls {
 
         self = [super init];
       
-        self.itemDesc=iDesc;
+        self.itemName=iName;
         self.itemID = iID;
+        self.status = [self convertStatus:iStatus];
         self.price = [iPrice doubleValue];
         self.qtyPurchased=(int*)[qty integerValue];
-        self.itemImage=image;
-    
+        self.imageUrl = iUrl;
+        self.shippingUrls = [self createDictionaryForUrls:sUrls];
     return self;
+}
+
+-(NSString*)description{
+    return [NSString stringWithFormat:@"Product name:%@ Item urls: %@",self.itemName,self.shippingUrls];
+}
+
+-(NSMutableDictionary*)createDictionaryForUrls:(NSArray*)urlArray{
+    NSMutableDictionary * tempUrlDict=[[NSMutableDictionary alloc]init ];
+    
+    for(NSString *url in urlArray){
+            if([url rangeOfString:@"ups"].location != NSNotFound){//if its ups 
+                NSString *newUrl=[NSString stringWithFormat:@"https://m.ups.com/mobile/track?trackingNumber=%@&t=t#Track",[[url componentsSeparatedByString:@"="]lastObject]] ;
+                [tempUrlDict setObject:newUrl forKey:[[NSArray arrayWithArray:[url componentsSeparatedByString:@"="]]lastObject]];
+            }
+            else {
+                [tempUrlDict setObject:url forKey:[[NSArray arrayWithArray:[url componentsSeparatedByString:@"="]]lastObject]];
+            }
+
+       
+    }
+       return tempUrlDict;
+}   
+
+-(NSString*)convertStatus:(NSString*)inStatus{
+   
+    if([inStatus isEqualToString:@"SENT"]||[inStatus isEqualToString:@"PROCESSING"])
+        return @"Processing";
+    else if([inStatus isEqualToString:@"COMPLETED"])
+        return @"Delivered";
+    else if([inStatus isEqualToString:@"SHIPPED"])
+        return @"Shipped";
+    else if([inStatus isEqualToString:@"CANCELLED"])
+        return @"Cancelled";
+
+    else {
+        return inStatus;
+    }
+    
 }
 @end

@@ -9,28 +9,32 @@
 #import <UIKit/UIKit.h>
 #import "ScrollingImage.h"
 #import "AppDelegate.h"
+#import <QuartzCore/QuartzCore.h>
 @class OrderDetailViewController;
 
-@interface RootActivityViewController : UITableViewController<UIGestureRecognizerDelegate,UITableViewDelegate>{
+@interface RootActivityViewController : UIViewController<UIGestureRecognizerDelegate,UITableViewDelegate>{
 OrderDetailViewController *orderDetailViewController;
 
 IBOutlet UITableView     *purchasesTableView;
 IBOutlet UITableViewCell *orderCell;    
-IBOutlet UIView* noContentView;
+IBOutlet UIView* extraStuffView;
     UITapGestureRecognizer *tapgr;
 
-    NSMutableArray  *purchases;
+    NSMutableArray  *currentOrders;
     AppDelegate *appDel;
 }
 @property(nonatomic,retain) UITapGestureRecognizer *tapgr;
 @property (nonatomic,retain) IBOutlet OrderDetailViewController *orderDetailViewController;
 @property (nonatomic,retain) IBOutlet UITableView       *purchasesTableView;
 @property (nonatomic,retain) IBOutlet UITableViewCell   *orderCell;
-@property(nonatomic,retain)IBOutlet UIView* noContentView;
+@property (nonatomic,retain) UIImageView *nocontentImageView,*backgroundImageview;
 
-@property (nonatomic,retain)          NSMutableArray    *purchases;
+@property (nonatomic,retain)ScrollingImage *orderScrollImage;
+
+@property (nonatomic,retain)          NSMutableArray    *currentOrders;
 @property (nonatomic,retain)    AppDelegate *appDel;
--(void)handleLongPress:(UILongPressGestureRecognizer *)gestureRecognizer;
+@property(nonatomic,retain) UILabel *timestamp;
 -(void)handleTapsOnScrollView:(id)sender;
--(BOOL)isScrolling;
+-(void)reloadImages;
+-(IBAction)imageWasTouched:(id)sender;
 @end

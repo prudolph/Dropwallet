@@ -26,47 +26,44 @@
         curPos=0;
         start=NO;
         
-        kScrollObjHeight= 95.0;
-        kScrollObjWidth	= 100.0;
+        kScrollObjHeight= 70.0;
+        kScrollObjWidth	= 80.0;
         kNumImages		= [images count];
 
         self.backgroundColor =[UIColor whiteColor];
         [self setCanCancelContentTouches:NO];        
         self.indicatorStyle = UIScrollViewIndicatorStyleWhite;
+         self.clipsToBounds = YES;		
+        self.scrollEnabled = YES;
+        self.pagingEnabled = NO;
+        self.showsHorizontalScrollIndicator=NO;
         self.layer.cornerRadius = 11;
         self.layer.masksToBounds = YES;
-        self.clipsToBounds = YES;		// default is NO, we want to restrict drawing within our scrollview
-        self.scrollEnabled = YES;
-        
-        // pagingEnabled property default is NO, if set the scroller will stop or snap at each photo
-        // if you want free-flowing scroll, don't set this property.
-        self.pagingEnabled = NO;
-     
-        [self loadImages:images];
-        [self layoutScrollImages];	// now place the photos in serial layout within the scrollview
-        self.showsHorizontalScrollIndicator=NO;
+        [self.layer setBorderColor:[[UIColor grayColor]CGColor]];
+        [self.layer setBorderWidth:.5];
 
+        [self loadImages:images];
+        [self layoutScrollImages];	       
+        
     }
     
     return self;
 }
 
 -(void)loadImages:(NSArray*)images{
-    // load all the images from our bundle and add them to the scroll view
     NSUInteger i;
     for (i = 0; i <[images count]; i++)
     {
-    
+        if (![[images objectAtIndex:i]isEqual:@"*"]) {
+            
         UIImageView *imageView = [[UIImageView alloc] initWithImage:[images objectAtIndex:i]];
-        
-        // setup each frame to a default height and width, it will be properly placed when we call "updateScrollList"
         CGRect rect = imageView.frame;
         rect.size.height = kScrollObjHeight;
         rect.size.width = kScrollObjWidth-15;
         imageView.frame = rect;
-        imageView.tag = i+1;	// tag our images for later use when we place them in serial fashion
+        imageView.tag = i+1;
         [self addSubview:imageView];
-        
+        }
       
         
     }
@@ -90,10 +87,12 @@
 			curXLoc += (kScrollObjWidth);
 		}
 	}
-	
-	// set the content size so it can be scrollable
-	[self setContentSize:CGSizeMake((kNumImages * kScrollObjWidth), [self bounds].size.height)];
-}
+    [self setContentSize:CGSizeMake((kNumImages * kScrollObjWidth), [self bounds].size.height)];        
+
+
+    }
+
+
 
 
 -(void)scroll{
@@ -132,13 +131,11 @@
 
 
 -(IBAction)startScrollcycle:(id)sender{
-
+    
     start=start? NO:YES;
-    
-    
     if(start){
         if(![self isDragging])
-            timer = [NSTimer scheduledTimerWithTimeInterval:1.35 target:self selector:@selector(scroll) userInfo:nil repeats:YES];
+            timer = [NSTimer scheduledTimerWithTimeInterval:1.05 target:self selector:@selector(scroll) userInfo:nil repeats:YES];
         
     }
     else

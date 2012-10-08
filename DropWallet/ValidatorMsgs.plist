@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>VALIDATIONMSGS</key>
+	<string></string>
+	<key>CCV2_Digits</key>
+	<string>CVV2 must be digits only.</string>
+	<key>CCV2_Length</key>
+	<string>The CVV2 must be 3-4 digits.</string>
+	<key>CC#_Gen_Error</key>
+	<string>There was an error with your credit card number.</string>
+	<key>Name_Chars</key>
+	<string>Name must only contain alphabetical characters.</string>
+	<key>Name_Length</key>
+	<string>Name must be shorter than 32 characters.</string>
+	<key>States_Picker</key>
+	<string>Please use the states picker!</string>
+	<key>Zipcode_digits</key>
+	<string>Zipcodes may only be digits.</string>
+	<key>Zipcode_mistype</key>
+	<string>Mistyped Zipcode</string>
+	<key>Zip_State_Mismatch</key>
+	<string>Your Zipcode and State don&apos;t match.</string>
+	<key>Missing_Field_Valid-Msg</key>
+	<string>Please complete all fields.</string>
+	<key>Month_Digits</key>
+	<string>Month may only contain digits.</string>
+	<key>Month_Length</key>
+	<string>Month may only be 2 digits.</string>
+	<key>Year_Digits</key>
+	<string>Year may only contain digits.</string>
+	<key>Year_Length</key>
+	<string>Year may only be 4 digits.</string>
+	<key>New_Old_Same</key>
+	<string>Your new password is the same as your old password.</string>
+	<key>Password_Length</key>
+	<string>New password needs to between 3 and 23 characters.</string>
+	<key>Password_Mismatch</key>
+	<string>New passwords do not match.</string>
+	<key>CurrentPass_Mismatch</key>
+	<string>Your current password does not match.</string>
+	<key>LOGIN_VALIDATION</key>
+	<string></string>
+	<key>Invalid_UnamePass-Title</key>
+	<string>Invalid username and/or password.</string>
+	<key>Pass_Length</key>
+	<string>Password must be between 3 and 23 characters.</string>
+	<key>Valid_Email</key>
+	<string>Username must be a valid email address.</string>
+	<key>Missing_Uname</key>
+	<string>Please enter a username.</string>
+</dict>
+</plist>

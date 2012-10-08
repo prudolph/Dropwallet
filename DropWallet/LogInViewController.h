@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SignUpModalViewController.h"
+#import "Validator.h"
 @class AppDelegate;
 @interface LogInViewController : UIViewController<UIAlertViewDelegate,UITextFieldDelegate>{
 
@@ -20,11 +21,12 @@
 @property (nonatomic,retain) AppDelegate *appDel;
 
 @property (nonatomic,retain) IBOutlet UITextField *appEmailTextfield,*appPasswordTextfield;
-@property (nonatomic,retain) IBOutlet UIButton  *submitButton,*SignUpButton;
+@property (nonatomic,retain) IBOutlet UIButton  *submitButton,*SignUpButton,*savePasswordButton;
 
 @property (nonatomic,retain) UIAlertView *missingInfoAlert;
 
 -(IBAction)loginSubmit;
 -(IBAction)signUpSelected:(id)sender;
+-(IBAction)loginOptions:(id)sender;
 
 @end

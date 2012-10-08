@@ -18,7 +18,7 @@
              *expMonth,
              *expYear,
              *cvv2;
-    
+    BOOL isPrimary;
     Address *billingAddress;
     
     
@@ -32,21 +32,26 @@
                                       *expMonth,
                                       *expYear,
                                       *cvv2;
-
+@property (nonatomic) BOOL isPrimary;
 @property (nonatomic,retain) Address *billingAddress;
 
 -(id)initWithCCtype:  (NSString *)inCCType			
       cardfirstName:  (NSString*)inCardFname
        cardlastName:  (NSString*)inCardLname
-      billfirstName:  (NSString*)inBillFname
-       billlastName:  (NSString*)inBillLname
+             toName: (NSString*)inToName
          cardNumber:  (NSString*)inCCNum
            expMonth:  (NSString*)inExpMonth
             expYear:  (NSString*)inExpYear
                cvv2:  (NSString*)inCvv2
          toAddress1:  (NSString*)inToAddress1
+         toAddress2:  (NSString*)inToAddress2
                city:  (NSString*)inCity
               state:  (NSString*)inState     
                 zip:  (NSString*)inZip
-          paymentID: (NSString*)inPaymentID;
+       billingAddID:   (NSString*)inBillingAddId
+          paymentID: (NSString*)inPaymentID
+      primaryMethod:  (BOOL)primary ;
+
+-(NSData*)asDataForUpdate:(BOOL)updatingCC;
+-(NSString *)checkInData:(NSString*)inString;
 @end
